@@ -213,7 +213,7 @@ article {
 
 .scroll_down {
   position: absolute;
-  bottom: 15vh;
+  bottom: 20vh;
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
