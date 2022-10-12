@@ -1,5 +1,6 @@
-@import url(/css/logo.css);
-@import url(/css/keyframes.css);
+@import url(css/logo.css);
+@import url(css/keyframes.css);
+@import url(css/mediaqueries.css);
 
 :root {
   --primary-color: #f8f8f8;
@@ -20,6 +21,7 @@ body {
   font-family: Helvetica, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -124,7 +126,6 @@ nav {
 
 .nav_link {
   position: relative;
-  font-family: "Vollkorn", sans-serif;
   font-size: calc(1.2vmin + 1.75vmax);
   color: transparent;
   -webkit-text-stroke: 1px #212121;
@@ -189,7 +190,6 @@ main {
   width: 80%;
   margin: 0 auto;
   transition: all 0.4s ease-in-out;
-  color: var(--secondary-color);
 }
 
 article {
@@ -483,4 +483,42 @@ footer > h1 {
   margin: 0;
   padding: 0;
   font-size: 90px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #212121;
+    color: var(--primary-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h5 {
+    color: var(--primary-color);
+  }
+
+  h4,
+  h5,
+  h6 {
+    -webkit-text-stroke: 1px var(--primary-color);
+  }
+
+  h4:hover,
+  h4:focus {
+    color: var(--primary-color);
+  }
+
+  #logo path {
+    stroke: white;
+  }
+  article {
+    padding: 20% 0;
+  }
+
+  .scroll_down {
+    bottom: 10vh;
+    animation: bouncy_big_screen 10s ease-out 0.5s infinite forwards;
+  }
 }

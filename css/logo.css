@@ -3,6 +3,10 @@
   width: 50vw;
 }
 
+#logo path {
+  stroke: #212121;
+}
+
 #logo path:nth-child(1) {
   stroke-dasharray: 470px;
   stroke-dashoffset: 470px;
