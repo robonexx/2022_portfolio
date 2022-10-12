@@ -1,0 +1,101 @@
+#logo {
+  margin-top: 1vh;
+  animation: logoFill 1s ease forwards 2s;
+  width: 50vw;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 470px;
+  stroke-dashoffset: 470px;
+  animation: logo-path 2s ease forwards 0.2s;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 246px;
+  stroke-dashoffset: 246px;
+  animation: logo-path 2s ease forwards 0.4s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 184px;
+  stroke-dashoffset: 184px;
+  animation: logo-path 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 76px;
+  stroke-dashoffset: 76px;
+  animation: logo-path 2s ease forwards 0.8s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 388px;
+  stroke-dashoffset: 388px;
+  animation: logo-path 2s ease forwards 1s;
+}
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 264px;
+  stroke-dashoffset: 264px;
+  animation: logo-path 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(7) {
+  stroke-dasharray: 100px;
+  stroke-dashoffset: 100px;
+  animation: logo-path 2s ease forwards 1.4s;
+}
+
+#logo path:nth-child(8) {
+  stroke-dasharray: 315px;
+  stroke-dashoffset: 315px;
+  animation: logo-path 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(9) {
+  stroke-dasharray: 264px;
+  stroke-dashoffset: 264px;
+  animation: logo-path 2s ease forwards 1s;
+}
+
+#logo path:nth-child(10) {
+  stroke-dasharray: 354px;
+  stroke-dashoffset: 354px;
+  animation: logo-path 2s ease forwards 0.8s;
+}
+
+#logo path:nth-child(11) {
+  stroke-dasharray: 264px;
+  stroke-dashoffset: 264px;
+  animation: logo-path 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(12) {
+  stroke-dasharray: 315px;
+  stroke-dashoffset: 315px;
+  animation: logo-path 2s ease forwards 0.4s;
+}
+
+#logo path:nth-child(13) {
+  stroke-dasharray: 184px;
+  stroke-dashoffset: 184px;
+  animation: logo-path 2s ease forwards 0.2s;
+}
+
+@keyframes logo-path {
+  from {
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+@keyframes logoFill {
+  from {
+    fill: none;
+  }
+  to {
+    fill: var(--secondary-color);
+  }
+}

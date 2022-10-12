@@ -1,0 +1,467 @@
+@import url(/css/logo.css);
+@import url(/css/keyframes.css);
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #232328;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 5% 0 15%;
+  font-size: calc(5vmin + 3vmax);
+  font-weight: 700;
+  line-height: 1;
+  word-spacing: 0.5rem;
+}
+
+h1:hover,
+h1:active {
+  -webkit-text-stroke: 1px #999;
+  color: transparent;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Vollkorn", sans-serif;
+  font-size: calc(2.25vmin + 2.75vmax);
+  color: #212121;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Vollkorn", sans-serif;
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: transparent;
+  /*  -webkit-text-stroke: 2px #212121; */
+  -webkit-text-stroke: 1px #212121;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+h4:hover,
+h4:focus {
+  color: #212121;
+}
+
+h5 {
+  font-family: "Vollkorn", sans-serif;
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: #212121;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+h6 {
+  font-family: "Vollkorn", sans-serif;
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: transparent;
+  -webkit-text-stroke: 1px #212121;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo_wrapper {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #888;
+}
+
+nav {
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav_item {
+  padding: 0 0.2rem;
+}
+
+.nav_link {
+  position: relative;
+  font-family: "Vollkorn", sans-serif;
+  font-size: calc(1.2vmin + 1.75vmax);
+  color: transparent;
+  -webkit-text-stroke: 1px #212121;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+  animation: from_opacity 1.6s 0.6s ease-out 1;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+  color: #212121;
+  cursor: pointer;
+}
+
+/* .nav_link {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #232328;
+  padding: 8px 12px;
+  background-color: transparent;
+  border-top: 1px solid #232328;
+  border-bottom: 1px solid #232328;
+  transition: background 0.4s ease-in-out;
+}
+
+.nav_link:hover {
+  color: var(--primary-color);
+  background-color: #232328;
+} */
+
+.hamburger {
+  height: 46px;
+  width: 46px;
+  display: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger > span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+.hamburger > span:before {
+  width: 100%;
+  height: 2px;
+}
+.hamburger > span:after {
+  width: 100%;
+  height: 2px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+  color: var(--secondary-color);
+}
+
+article {
+  position: relative;
+  padding: 70% 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero > h5 {
+  position: relative;
+  animation: from_left 0.6s ease-out 1 forwards;
+}
+.hero > h6 {
+  position: relative;
+  animation: from_right 0.4s ease-out 0.5s 1 forwards;
+}
+
+.scroll_down {
+  position: absolute;
+  bottom: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.15));
+  animation: bouncy 10s ease-out 0.5s infinite forwards;
+}
+
+section {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+#about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+#about > h1 {
+  text-shadow: 1px 1px #888;
+}
+
+.iam {
+  display: block;
+  align-items: baseline;
+}
+
+.images {
+  position: relative;
+  width: 100%;
+  width: 420px;
+  min-width: 260px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: -1;
+  cursor: pointer;
+}
+
+.image1 {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  /*  background-image: url(/assets/images/bw_rob1.png); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.6s ease-in-out;
+}
+
+@keyframes glitch {
+  5% {
+    visibility: visible;
+    background-image: none;
+  }
+  10% {
+    opacity: 0.2;
+    background-image: url("/assets/images/robdajoker.png");
+    -webkit-filter: grayscale(1);
+    left: -2%;
+    bottom: -2%;
+  }
+  15.5% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.5;
+    -webkit-filter: hue-rotate(60deg) invert(1) saturate(2.7);
+    left: 5%;
+    top: -40%;
+  }
+  22% {
+    opacity: 0.5;
+    filter: none;
+    left: -0%;
+    top: -30%;
+  }
+  24% {
+    opacity: 1;
+    -webkit-filter: hue-rotate(60deg) invert(1) saturate(2.7);
+  }
+  25.5% {
+    opacity: 0.5;
+    filter: invert(1);
+  }
+  30% {
+    filter: none;
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+    filter: invert(1);
+    top: 30%;
+    left: -12%;
+  }
+  45% {
+    background-image: none;
+    filter: none;
+    opacity: 1;
+  }
+  49% {
+    background-image: url("/assets/images/robdajoker.png");
+    -webkit-filter: hue-rotate(30deg) invert(1) saturate(1.7);
+    opacity: 0.5;
+    left: 4%;
+  }
+  50% {
+    background-image: none;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  55% {
+    visibility: visible;
+    background-image: none;
+  }
+  60% {
+    opacity: 0.2;
+    background-image: url("/assets/images/robdajoker.png");
+    -webkit-filter: hue-rotate(0deg) invert(0.5) saturate(4.7);
+    left: -5%;
+    bottom: -10%;
+  }
+  65.5% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.5;
+    -webkit-filter: hue-rotate(60deg) invert(1) saturate(2.7);
+    left: 10%;
+    top: -10%;
+  }
+  72% {
+    opacity: 0.5;
+    filter: none;
+    left: -2%;
+    top: -2%;
+  }
+  74% {
+    opacity: 1;
+    -webkit-filter: hue-rotate(40deg) invert(1) saturate(2.7);
+  }
+  75.5% {
+    opacity: 0.5;
+    filter: invert(1);
+  }
+  80% {
+    filter: none;
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.5;
+    filter: invert(1);
+    transform: scale(2);
+    top: 20%;
+    left: 7%;
+  }
+  90% {
+    background-image: none;
+    filter: none;
+    opacity: 1;
+  }
+  95% {
+    background-image: url("/assets/images/robdajoker.png");
+    filter: invert(1) grayscale(1);
+    transform: scale(1.5);
+    opacity: 0.5;
+    left: 4%;
+  }
+  100% {
+    background-image: none;
+    opacity: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.image2 {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  /* background-image: url(/assets/images/robdajoker.png); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.6s ease-in-out;
+  /*  -webkit-animation: glitch 15s 1 step-end;
+  animation: glitch 15s 1 step-end; */
+}
+
+.images:hover > .image1 {
+  opacity: 0;
+}
+.images:hover > .image2 {
+  position: absolute;
+  opacity: 1;
+  -webkit-animation: glitch 15s 1 step-end;
+  animation: glitch 15s 1 step-end;
+}
+
+.desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_ddd {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.ddd {
+  font-size: 0.8rem;
+}
+
+.desc > div > h4:hover {
+  color: #888;
+}
+/* .desc > div:last-of-type {
+  padding-right: 2rem;
+} */
+
+.content {
+  background-color: var(--secondary-color);
+  padding: 100px 0;
+  height: fit-content;
+}
+.content_title,
+.content_desc {
+  color: var(--primary-color);
+}
+
+.content_img {
+  width: 420px;
+  height: 360px;
+}

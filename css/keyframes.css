@@ -1,0 +1,71 @@
+@keyframes from_left {
+  to {
+    left: 0;
+  }
+
+  from {
+    left: -120%;
+  }
+}
+
+@keyframes from_right {
+  to {
+    right: 0;
+  }
+
+  from {
+    right: -120%;
+  }
+}
+
+@keyframes from_opacity {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bouncy {
+  0% {
+  }
+
+  25% {
+  }
+
+  49% {
+    bottom: 15vh;
+  }
+
+  50% {
+    bottom: 12vh;
+  }
+
+  60% {
+    bottom: 15vh;
+  }
+
+  70% {
+    bottom: 12vh;
+  }
+  80% {
+    bottom: 15vh;
+  }
+
+  100% {
+  }
+}
