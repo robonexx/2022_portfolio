@@ -1,5 +1,6 @@
 @import url(/css/logo.css);
 @import url(/css/keyframes.css);
+
 :root {
   --primary-color: #f8f8f8;
   --secondary-color: #232328;
@@ -100,7 +101,9 @@ header {
 }
 
 #logo_wrapper {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   border-bottom: 1px solid #888;
 }
