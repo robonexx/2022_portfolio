@@ -69,3 +69,32 @@
   100% {
   }
 }
+@keyframes bouncy_big_screen {
+  0% {
+  }
+
+  25% {
+  }
+
+  49% {
+    bottom: 10vh;
+  }
+
+  50% {
+    bottom: 8vh;
+  }
+
+  60% {
+    bottom: 10vh;
+  }
+
+  70% {
+    bottom: 8vh;
+  }
+  80% {
+    bottom: 10vh;
+  }
+
+  100% {
+  }
+}
