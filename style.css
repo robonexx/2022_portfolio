@@ -115,6 +115,7 @@ nav {
 }
 
 .nav_item {
+  position: relative;
   padding: 0 0.2rem;
 }
 
@@ -131,6 +132,7 @@ nav {
   cursor: pointer;
   transition: color 0.4s ease-in-out;
   animation: from_opacity 1.6s 0.6s ease-out 1;
+  z-index: 100;
 }
 
 .nav_link:hover,
@@ -464,4 +466,18 @@ section {
 .content_img {
   width: 420px;
   height: 360px;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282828;
+}
+
+footer > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 90px;
 }
