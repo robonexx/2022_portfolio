@@ -7,7 +7,7 @@
   cursor: pointer;
   /* position absolute position the icons relative to the body because they have no position relative parents*/
   position: absolute;
-  top: 2rem;
+  top: 4rem;
   right: 2rem;
   width: 56px;
   height: 56px;
