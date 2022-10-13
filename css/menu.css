@@ -56,7 +56,7 @@
   align-items: center;
   justify-content: center;
   /* simple menu animation, menu pushed to right side of screen */
-  transform: translateX(100%);
+  transform: translateX(100vw);
   transition: transform 0.2s ease;
   z-index: 1000;
 }
@@ -81,24 +81,11 @@
   text-transform: uppercase;
 }
 
-.nav_link_before {
-  content: "Hello";
-  position: absolute;
-  top: 10px;
-  color: #888;
-  display: none;
-  z-index: 1000;
-}
-
 .nav_link:hover,
 .nav_link:focus {
   color: transparent;
   -webkit-text-stroke: 1px var(--primary-color);
   letter-spacing: 2px;
-}
-
-.nav_link:hover > ::before {
-  display: block;
 }
 
 @media screen and (min-width: 768px) {
