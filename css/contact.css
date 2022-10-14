@@ -1,8 +1,9 @@
-.body_contact {
+.contact_body {
   height: 100vh;
 }
 
 .hero_contact {
+  margin: 0 auto;
   margin-top: 200px;
 }
 
