@@ -81,7 +81,7 @@ label {
 }
 
 .btn:hover {
-  background: var(--thumb-bg);
+  background: #282828;
   color: var(--primary-color);
   transform: scale(0.96);
 }
