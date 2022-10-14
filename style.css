@@ -1,6 +1,7 @@
 @import url("css/logo.css");
 @import url("css/keyframes.css");
-@import url("css/menu.css");
+@import url("css/navbar.css");
+/* @import url("css/menu.css"); */
 
 :root {
   --primary-color: #f8f8f8;
@@ -94,12 +95,14 @@ p {
 }
 
 header {
+  position: fixed;
   width: 100%;
   height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 #logo_wrapper {
@@ -107,7 +110,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  border-bottom: 1px solid #888;
+  /*  border-bottom: 1px solid #888; */
 }
 
 main {
@@ -161,7 +164,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
 }
 
 #about > h1 {
@@ -184,7 +186,7 @@ section {
   justify-content: center;
   overflow: hidden;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  z-index: -1;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -200,6 +202,7 @@ section {
   width: 100%;
   height: 100%;
   transition: opacity 0.6s ease-in-out;
+  filter: grayscale(80%);
 }
 
 @keyframes glitch {
@@ -247,88 +250,27 @@ section {
     top: 30%;
     left: -12%;
   }
-  45% {
+  50% {
     background-image: none;
     filter: none;
     opacity: 1;
   }
-  49% {
+  60% {
     background-image: url("assets/images/robdajoker.png");
     -webkit-filter: hue-rotate(30deg) invert(1) saturate(1.7);
     opacity: 0.5;
     left: 4%;
   }
-  50% {
+  80% {
     background-image: none;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0;
-  }
-  55% {
-    visibility: visible;
-    background-image: none;
-  }
-  60% {
-    opacity: 0.2;
-    background-image: url("assets/images/robdajoker.png");
-    -webkit-filter: hue-rotate(0deg) invert(0.5) saturate(4.7);
-    left: -5%;
-    bottom: -10%;
-  }
-  65.5% {
-    opacity: 0.5;
-  }
-  70% {
-    opacity: 0.5;
-    -webkit-filter: hue-rotate(60deg) invert(1) saturate(2.7);
-    left: 10%;
-    top: -10%;
-  }
-  72% {
-    opacity: 0.5;
-    filter: none;
-    left: -2%;
-    top: -2%;
-  }
-  74% {
-    opacity: 1;
-    -webkit-filter: hue-rotate(40deg) invert(1) saturate(2.7);
-  }
-  75.5% {
-    opacity: 0.5;
-    filter: invert(1);
-  }
-  80% {
-    filter: none;
-    opacity: 1;
-  }
-  85% {
-    opacity: 0.5;
-    filter: invert(1);
-    transform: scale(2);
-    top: 20%;
-    left: 7%;
-  }
-  90% {
-    background-image: none;
-    filter: none;
-    opacity: 1;
-  }
-  95% {
-    background-image: url("assets/images/robdajoker.png");
-    filter: invert(1) grayscale(1);
-    transform: scale(1.5);
-    opacity: 0.5;
-    left: 4%;
   }
   100% {
+    visibility: visible;
     background-image: none;
-    opacity: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
   }
 }
 
@@ -468,7 +410,7 @@ footer > h1 {
     }
 
     article {
-      padding: 30% 0;
+      padding: 40% 0;
     }
     .hero {
       align-items: flex-start;
@@ -486,7 +428,7 @@ footer > h1 {
     }
 
     .scroll_down {
-      bottom: 10vh;
+      bottom: 2vh;
       animation: bouncy_big_screen 10s ease-out 0.5s infinite forwards;
     }
 

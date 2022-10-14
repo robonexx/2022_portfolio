@@ -1,6 +1,6 @@
 #logo {
   animation: logoFill 1s ease forwards 2s;
-  width: 50vw;
+  width: 30vw;
 }
 
 #logo path {
@@ -100,5 +100,11 @@
   }
   to {
     fill: var(--secondary-color);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 50vw;
   }
 }
