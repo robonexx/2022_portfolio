@@ -102,7 +102,8 @@
 
   .navbar_container .hamburger_btn::before {
     content: "";
-    background: orangered;
+    background: var(--primary-color);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
     position: absolute;
     bottom: 0px;
     left: -12px;
