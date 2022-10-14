@@ -58,7 +58,7 @@
 
 @media (max-width: 768px) {
   .navbar {
-    opacity: 0.98;
+    opacity: 0.99;
     box-shadow: none;
     background: transparent;
   }
@@ -78,8 +78,8 @@
     position: absolute;
     height: 76px;
     width: 76px;
-    bottom: 2rem;
-    right: 3rem;
+    top: -3rem;
+    right: 2rem;
     z-index: 101;
     opacity: 0;
     cursor: pointer;
@@ -90,8 +90,8 @@
     height: 52px;
     width: 52px;
     position: absolute;
-    bottom: 2rem;
-    right: 3rem;
+    top: -3rem;
+    right: 2rem;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -104,10 +104,10 @@
     content: "";
     background: orangered;
     position: absolute;
-    bottom: -10px;
-    left: -20px;
-    width: 100px;
-    height: 100px;
+    bottom: 0px;
+    left: -12px;
+    width: 76px;
+    height: 76px;
     border-radius: 50%;
     z-index: -1;
   }
@@ -118,7 +118,7 @@
     width: 100%;
     border-radius: 10px;
     background: #333;
-    font-size: calc(1.5vmin + 1.75vmax);
+    font-size: calc(1.2vmin + 1.5vmax);
     font-weight: 600px;
   }
 
@@ -177,6 +177,7 @@
     .line1::after {
     position: absolute;
     top: 0;
+    left: 0;
     content: attr(data-text);
     color: var(--primary-color);
   }
