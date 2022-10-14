@@ -1,6 +1,8 @@
 @import url("css/logo.css");
 @import url("css/keyframes.css");
 @import url("css/navbar.css");
+@import url("css/road2code.css");
+@import url("css/contact.css");
 /* @import url("css/menu.css"); */
 
 :root {
@@ -8,6 +10,8 @@
   --secondary-color: #232328;
   --scrollbar-bg: #121212;
   --thumb-bg: orangered;
+  --form-valid: #b7ddb7c4;
+  --form-invalid: #e7ab3cc7;
 }
 
 * {
@@ -28,28 +32,8 @@ body {
 }
 
 /* change scrollbar */
+
 /* width */
-::-webkit-scrollbar {
-  width: 1rem;
-  height: 146px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 1px rgb(241, 241, 241);
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--thumb-bg);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(190, 51, 0);
-}
 
 h1,
 h2,
@@ -137,6 +121,10 @@ h6 {
   transition: color 0.4s ease-in-out;
 }
 
+.inverted {
+  -webkit-text-stroke: 1px var(--primary-color);
+}
+
 p {
   font-size: 1rem;
   line-height: 150%;
@@ -144,8 +132,7 @@ p {
 
 header {
   position: fixed;
-  left: 5%;
-  width: 90%;
+  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -397,21 +384,6 @@ section {
   padding-right: 2rem;
 } */
 
-.content {
-  background-color: var(--secondary-color);
-  padding: 100px 0;
-  height: fit-content;
-}
-.content_title,
-.content_desc {
-  color: var(--primary-color);
-}
-
-.content_img {
-  width: 420px;
-  height: 360px;
-}
-
 footer {
   height: 100px;
   display: flex;
@@ -428,6 +400,26 @@ footer > h1 {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px rgb(241, 241, 241);
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--thumb-bg);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(190, 51, 0);
+  }
   body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -457,6 +449,11 @@ footer > h1 {
 
   header {
     background: transparent;
+    pointer-events: none;
+  }
+
+  nav {
+    pointer-events: visible;
   }
   main {
     width: 60%;
