@@ -1,0 +1,57 @@
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card {
+  margin: 5vh 0;
+  width: 80vw;
+  height: 40vh;
+  flex-shrink: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+  border: 2px solid rgba(136, 136, 136, 0.39);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  transition: 0.3s;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  margin: 1rem 0 0;
+  font-size: 3.8vw;
+  opacity: 1;
+  color: var(--secondary-color);
+}
+/* 
+.card:last-child:after {
+  content: "";
+  width: 6vw;
+  position: absolute;
+  height: 100%;
+  right: -6vw;
+  top: 0;
+} */
+
+.card > img {
+  max-width: 40%;
+  opacity: 1;
+  margin: auto;
+  display: block;
+  transition: 0.35s;
+}
+
+.card > p {
+  margin: 2rem 0 0;
+}
