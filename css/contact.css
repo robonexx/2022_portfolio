@@ -5,6 +5,8 @@
 .hero_contact {
   margin: 0 auto;
   margin-top: 200px;
+  text-align: center;
+  animation: from_opacity 1s ease-in;
 }
 
 /* ============ contact form section =========================*/

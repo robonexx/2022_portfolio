@@ -1,4 +1,4 @@
-const content = document.querySelector(".content");
+/* const content = document.querySelector(".content");
 
 const info = [
   {
@@ -23,10 +23,13 @@ info.forEach(({ title, desc, img }) => {
 });
 
 content.innerHTML = div;
-
+ */
 /* 
 const contentTitle = document.createElement("h2");
 contentTitle.classList.add("content_title");
 contentTitle.textContent = info[0].title;
 
 content.appendChild(contentTitle); */
+var myPath = document.getElementById("cpath");
+var length = myPath.getTotalLength();
+console.log(length);

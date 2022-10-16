@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap");
+
+:root {
+  --primary-color: #f8f8f8;
+  --secondary-color: #232328;
+  --dimmed-color: rgba(0, 0, 0, 0.25);
+  --scrollbar-bg: #121212;
+  --thumb-bg: orangered;
+  --form-valid: #b7ddb7c4;
+  --form-invalid: #e27a68c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--secondary-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+input,
+html,
+body,
+article,
+section,
+div {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  margin: 5% 0 15%;
+  font-size: calc(5vmin + 3vmax);
+  font-weight: 700;
+  line-height: 1;
+  word-spacing: 0.5rem;
+}
+
+h1:hover,
+h1:active {
+  -webkit-text-stroke: 1px #999;
+  color: transparent;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: calc(2.25vmin + 2.75vmax);
+  color: #212121;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: transparent;
+  /*  -webkit-text-stroke: 2px #212121; */
+  -webkit-text-stroke: 1px #212121;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+h4:hover,
+h4:focus {
+  color: #212121;
+}
+
+h5 {
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: #212121;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+h6 {
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: transparent;
+  -webkit-text-stroke: 1px #212121;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+.inverted {
+  -webkit-text-stroke: 1px var(--primary-color);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 150%;
+}
