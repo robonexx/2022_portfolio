@@ -135,7 +135,7 @@
 
         <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
- <form action="submitscript.php" target="dummyframe" name="loginForm" class="form" id="contactForm">
+ <form action="post" target="dummyframe" name="loginForm" class="form" id="contactForm">
      <div class="formContent content" >
      <label for="name">Name:</label>
      <input type="text" name="name" id="name" class="input-field name"  placeholder="" required> <!-- set in this  oninput="validate()" here for javascript validation to work-->
@@ -144,7 +144,7 @@
      <br>
      <div class="formContent content" >
      <label for="company">Company:</label>
-     <input type="text" name="company" id="company" class="input-field company" placeholder="">
+     <input type="text" name="company" id="company" class="input-field company" placeholder="" required>
      </div>
      <div id="nameError" class="error"></div>
      <br>
@@ -157,13 +157,13 @@
      <br>
      <div class="formContent content" >
          <label for="phone">Phone Nr:</label>
-         <input type="text" name="phone" id="phone" class="input-field phone" placeholder="">
+         <input type="text" name="phone" id="phone" class="input-field phone" placeholder="" required>
          </div>
          <div id="nameError" class="error"></div>
          <br>
      <div class="formContent">
          <label type="text" for="textarea">Message:</label>
-         <textarea name="text" id="message" class="input-field message" cols="30" rows="10" placeholder="Write you message here"></textarea>
+         <textarea name="text" id="message" class="input-field message" cols="30" rows="10" placeholder="Write you message here" required></textarea>
          </div>
          <div id="messageError" class="error"></div>
      <input type="submit" value="Submit" class="btn" href="/">

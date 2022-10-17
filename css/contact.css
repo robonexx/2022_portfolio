@@ -48,7 +48,7 @@ label {
 
 .input-field {
   max-width: 30em;
-  min-width: 20em;
+  min-width: 50%;
   border: none;
   outline: none;
   background: #d7dbda;
@@ -64,6 +64,15 @@ label {
   background: var(--form-valid);
 }
 .input-field:invalid {
+  background: var(--primary-color);
+}
+
+input:required {
+  border: 1px solid #888;
+}
+
+input:required:invalid {
+  border-color: #ec6e6e;
   background: var(--form-invalid);
 }
 
@@ -91,7 +100,8 @@ label {
 
 .message {
   margin: auto;
-  width: 20em;
+  max-width: 30em;
+  min-width: 50%;
   margin-right: 0;
   text-align: left;
 }
@@ -104,6 +114,7 @@ label {
   margin-bottom: 10px;
   display: none;
 }
+
 @media screen and (max-width: 768px) {
   .contact_body > main {
     width: 100%;

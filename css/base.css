@@ -6,8 +6,9 @@
   --dimmed-color: rgba(0, 0, 0, 0.25);
   --scrollbar-bg: #121212;
   --thumb-bg: orangered;
-  --form-valid: #b7ddb7c4;
+  --form-valid: #def0dec4;
   --form-invalid: #e27a68c7;
+  --form-invalid: rgb(248, 213, 213);
 }
 
 * {
