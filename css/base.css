@@ -5,7 +5,7 @@
   --secondary-color: #232328;
   --dimmed-color: rgba(0, 0, 0, 0.25);
   --scrollbar-bg: #121212;
-  --thumb-bg: orangered;
+  --thumb-bg: rgb(226, 83, 40);
   --form-valid: #def0dec4;
   --form-invalid: #e27a68c7;
   --form-invalid: rgb(248, 213, 213);
