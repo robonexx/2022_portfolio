@@ -7,6 +7,7 @@
 @import url("css/contact.css");
 @import url("css/coffee.css");
 @import url("css/card.css");
+@import url("css/back_btn.css");
 
 header {
   position: fixed;
@@ -302,9 +303,12 @@ footer > h1 {
 
   h1,
   h2,
-  h3,
   h5 {
     color: var(--primary-color);
+  }
+
+  h3 {
+    color: #888;
   }
 
   h4,

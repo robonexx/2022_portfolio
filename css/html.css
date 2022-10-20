@@ -1,0 +1,39 @@
+@import url("../main.css");
+
+.main_pages {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.main_pages > h1 {
+  margin-top: 200px;
+}
+
+.html_page_lists {
+  margin: 2% 0;
+}
+
+.html_page_lists > li {
+  font-size: calc(0.8vmin + 1.2vmax);
+}
+
+.example {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+}
+
+.example > div {
+  padding: 2rem 4rem;
+  background-color: black;
+  color: white;
+}
+
+.example > div:last-of-type {
+  padding: 2rem 4rem;
+  background-color: white;
+  color: orangered;
+}

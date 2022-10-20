@@ -74,6 +74,12 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: calc(1vmin + 1.5vmax);
+  margin: 2% 0;
+  color: #888;
+}
+
 h4 {
   font-size: calc(1.5vmin + 1.75vmax);
   color: transparent;
