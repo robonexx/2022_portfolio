@@ -1,21 +1,22 @@
 .svg_container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 50%;
+  height: 40%;
   text-align: center;
-  z-index: 1;
+  z-index: 1001;
 }
 
 #coffee {
   position: relative;
   display: block;
   height: 100%;
-  z-index: 1;
+  z-index: 1000;
 }
 
 #coffee > #cpath {
-  stroke: var(--text);
+  stroke: var(--color-alt);
   stroke-width: 5;
   stroke-dasharray: 5587.609375;
   stroke-dashoffset: 5587.609375;
@@ -38,6 +39,7 @@
     top: 0;
     left: 0;
     width: 40%;
+    height: 100%;
   }
 
   #coffee > #cpath {

@@ -10,11 +10,11 @@
 
 @keyframes from_right {
   to {
-    right: 0;
+    left: 0;
   }
 
   from {
-    right: -120%;
+    left: 120%;
   }
 }
 

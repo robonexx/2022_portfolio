@@ -119,7 +119,7 @@ input:required:invalid {
   margin-bottom: 10px;
   display: none;
 }
-
+/* 
 #dummyframe {
   display: block;
   position: fixed;
@@ -131,7 +131,7 @@ input:required:invalid {
   color: white;
   z-index: 100;
   border: 1px solid white;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .contact_body > main {

@@ -3,6 +3,8 @@
   position: fixed;
   left: 1rem;
   top: 2rem;
+  z-index: 1000;
+  animation: from_opacity 1s ease-out 1 forwards;
 }
 
 .theme_btn > input[type="checkbox"] {

@@ -2,7 +2,7 @@
 .navbar .hamburger_btn {
   display: none;
   position: absolute;
-  top: -3rem;
+  top: 0;
   right: 1rem;
 }
 
@@ -89,8 +89,8 @@
     height: 46px;
   }
 
-  .navbar_container input[type="checkbox"] {
-    position: absolute;
+  .navbar_container > input[type="checkbox"] {
+    /*  position: absolute; */
     height: 76px;
     width: 76px;
     z-index: 1001;
@@ -107,7 +107,7 @@
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
     background-color: var(--background);
-    overflow: scroll;
+
     /* z-index: 99; */
   }
 
