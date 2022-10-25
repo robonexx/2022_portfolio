@@ -71,28 +71,29 @@
 }
 @keyframes bouncy_big_screen {
   0% {
+    bottom: 5vh;
   }
 
   25% {
   }
 
   49% {
-    bottom: 2vh;
+    bottom: 5vh;
   }
 
   50% {
-    bottom: 1vh;
+    bottom: 4vh;
   }
 
   60% {
-    bottom: 2vh;
+    bottom: 5vh;
   }
 
   70% {
-    bottom: 1vh;
+    bottom: 4vh;
   }
   80% {
-    bottom: 2vh;
+    bottom: 5vh;
   }
 
   100% {

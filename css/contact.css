@@ -2,7 +2,7 @@
   height: 100vh;
 }
 
-.hero_contact {
+.form_contact {
   margin: 0 auto;
   margin-top: 200px;
   text-align: center;
@@ -14,30 +14,35 @@
 .form_container {
   display: flex;
   flex-flow: column;
-  margin: 50px auto;
-  max-width: 500px;
+  margin: 2rem auto;
+  width: 40vw;
   min-width: 360px;
   height: fit-content;
   padding: 25px 15px;
-  background: var(--secondary-color);
-  box-shadow: 0px 0px 1px black, 0px 0px 1px white;
+  background: var(--text);
+  box-shadow: 0px 0px 1px black, 0px 0px 1px rgb(12, 12, 12);
   z-index: 10;
+}
+
+.contactForm {
+  padding: 2rem;
 }
 
 label {
   min-width: 100px;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  padding: 0.25rem 0 0.25rem 1rem;
   font-family: "", sans-serif;
-  font-size: calc(0.8vmin + 1.2vmax);
-  color: var(--primary-color);
+  font-size: 1.2rem;
+  color: var(--background);
   text-decoration: none;
   /* color: var(--primary-color); */
 }
 
+a {
+  text-decoration: none;
+}
+
 .formContent {
-  margin: auto;
-  margin-bottom: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,15 +61,15 @@ label {
   font-size: 12px;
 }
 .input-field::placeholder {
-  color: #0f1721;
+  color: var(--color-visited);
   padding-left: 5px;
 }
 
 .input-field:valid {
-  background: var(--form-valid);
+  background: var(--color-form-valid);
 }
 .input-field:invalid {
-  background: var(--primary-color);
+  background: var(--text);
 }
 
 input:required {
@@ -78,10 +83,10 @@ input:required:invalid {
 
 .btn {
   position: relative;
-  margin: 20px auto 0px;
-  padding: 8px 12px;
+  margin: 24px auto;
+  padding: 16px 24px;
   display: flex;
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   background: none;
   border: 1px solid rgb(255, 255, 255);
@@ -115,18 +120,30 @@ input:required:invalid {
   display: none;
 }
 
+#dummyframe {
+  display: block;
+  position: fixed;
+  top: 20vh;
+  right: 10vh;
+  width: 200px;
+  height: 200px;
+  font-size: 0.5rem;
+  color: white;
+  z-index: 100;
+  border: 1px solid white;
+}
+
 @media screen and (max-width: 768px) {
   .contact_body > main {
     width: 100%;
   }
   .form_container {
-    margin: 50px auto 0;
+    margin: 2rem auto 0;
     width: 100%;
     min-width: 100%;
     max-width: 100%;
     height: fit-content;
-    padding: 25px 15px;
-    background: var(--secondary-color);
+    background: var(--background);
     box-shadow: 0px 0px 1px black, 0px 0px 1px white;
   }
 }

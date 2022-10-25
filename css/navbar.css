@@ -1,6 +1,9 @@
 .navbar input[type="checkbox"],
 .navbar .hamburger_btn {
   display: none;
+  position: absolute;
+  top: -3rem;
+  right: 1rem;
 }
 
 .container {
@@ -35,9 +38,9 @@
   padding: 1rem;
 }
 
-.navbar a {
+.navbar a:link {
   color: transparent;
-  -webkit-text-stroke: 1px var(--primary-color);
+  -webkit-text-stroke: 1px var(--text);
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   color: transparent;
@@ -48,12 +51,19 @@
 
 .navbar a:hover,
 .navbar a:active {
-  color: var(--primary-color);
+  color: var(--text);
 }
 
 .navbar a:visited {
-  -webkit-text-stroke: 1px solid #888;
+  -webkit-text-stroke: 1px var(--color-visited);
+  color: var(--color-alt);
 }
+.navbar a:visited:hover {
+  -webkit-text-stroke: 1px var(--text);
+  color: var(--text);
+}
+
+/* Media queries */
 
 @media (max-width: 768px) {
   .navbar {
@@ -67,6 +77,12 @@
     display: block;
   }
 
+  .navbar_container .hamburger_btn {
+    display: block;
+    z-index: 1000;
+    pointer-events: none;
+  }
+
   .navbar_container {
     display: block;
     position: relative;
@@ -77,9 +93,7 @@
     position: absolute;
     height: 76px;
     width: 76px;
-    top: -3rem;
-    right: 1rem;
-    z-index: 101;
+    z-index: 1001;
     opacity: 0;
     cursor: pointer;
   }
@@ -92,9 +106,9 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
-    background-color: var(--secondary-color);
+    background-color: var(--background);
     overflow: scroll;
-    z-index: 99;
+    /* z-index: 99; */
   }
 
   .navbar .menu_items li {
@@ -105,7 +119,7 @@
   }
 
   .navbar a {
-    color: var(--primary-color);
+    color: var(--text);
   }
 
   .navbar_container input[type="checkbox"]:checked ~ .menu_items {
@@ -113,23 +127,18 @@
   }
 
   .navbar_container input[type="checkbox"] ~ .hamburger_btn {
-    position: absolute;
-    top: -3rem;
-    right: 1rem;
-    z-index: 100;
     display: block;
     height: 46px;
     width: 46px;
     border-radius: 50%;
     /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15); */
-    pointer-events: none;
   }
 
   .navbar_container input[type="checkbox"] ~ .hamburger_btn .line,
   .navbar_container input[type="checkbox"] ~ .hamburger_btn .line::before,
   .navbar_container input[type="checkbox"] ~ .hamburger_btn .line::after {
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: var(--text);
     height: 4px;
     width: 32px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -161,7 +170,7 @@
     input[type="checkbox"]:checked
     ~ .hamburger_btn
     .line::before {
-    background: rgb(241, 58, 26);
+    background: var(--color-alt);
     margin-top: 0px;
     transform: rotate(45deg);
     transition: background 0.4s ease-in-out, transform 0.4s ease-out;
@@ -170,7 +179,7 @@
     input[type="checkbox"]:checked
     ~ .hamburger_btn
     .line::after {
-    background: rgb(241, 58, 26);
+    background: var(--color-alt);
     margin-top: 0px;
     transform: rotate(-45deg);
     transition: background 0.4s ease-in-out, transform 0.4s ease-out;

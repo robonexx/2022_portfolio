@@ -1,11 +1,31 @@
+#logo_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 80px;
+  /*  border-bottom: 1px solid #888; */
+}
+
 #logo {
   animation: logoFill 1s ease forwards 2s;
   width: 20vw;
   height: 100%;
+  pointer-events: none;
+}
+
+#logo_wrapper > a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 #logo path {
-  stroke: var(--secondary-color);
+  stroke: var(--text);
 }
 
 #logo path:nth-child(1) {
@@ -100,7 +120,7 @@
     fill: none;
   }
   to {
-    fill: var(--secondary-color);
+    fill: var(--text);
   }
 }
 

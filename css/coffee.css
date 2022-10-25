@@ -15,7 +15,7 @@
 }
 
 #coffee > #cpath {
-  stroke: var(--dimmed-color);
+  stroke: var(--text);
   stroke-width: 5;
   stroke-dasharray: 5587.609375;
   stroke-dashoffset: 5587.609375;
@@ -41,6 +41,6 @@
   }
 
   #coffee > #cpath {
-    stroke: var(--primary-color);
+    stroke: var(--color-alt);
   }
 }
