@@ -5,14 +5,13 @@
   width: 50%;
   height: 40%;
   text-align: center;
-  z-index: 1001;
+  z-index: 99;
 }
 
 #coffee {
   position: relative;
   display: block;
   height: 100%;
-  z-index: 1000;
 }
 
 #coffee > #cpath {
