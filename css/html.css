@@ -13,11 +13,12 @@
 }
 
 .html_page_lists {
-  margin: 2% 0;
+  margin: 5% 0;
 }
 
 .html_page_lists > li {
   font-size: calc(0.8vmin + 1.2vmax);
+  padding: 0.5rem 0;
 }
 
 .example {

@@ -7,7 +7,7 @@
   animation: from_opacity 1s ease-out 1 forwards;
 }
 
-.theme_btn > input[type="checkbox"] {
+#darkmode[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -23,7 +23,7 @@
   border-radius: 2rem;
   z-index: 1000;
 }
-.theme_btn > input[type="checkbox"]:before {
+#darkmode[type="checkbox"]:before {
   position: absolute;
   content: "";
   height: 1.8rem;
@@ -37,16 +37,14 @@
   transition: all 0.5s;
 }
 
-.theme_btn > input[type="checkbox"] {
+#darkmode[type="checkbox"] {
   cursor: pointer;
 }
-.theme_btn > input[type="checkbox"]:checked:before {
+
+#darkmode:checked:before {
   background-color: #f5f5f5;
   left: auto;
   right: 1px;
   -webkit-box-shadow: 0 0 8.75em 1.87em rgba(63, 204, 134, 0.329);
   box-shadow: 0 0 2rem 1.5rem rgba(150, 104, 235, 0.219);
-}
-input[type="checkbox"]:checked + label {
-  top: 6rem;
 }

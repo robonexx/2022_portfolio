@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name = "color-scheme" content = "light dark"/>
     <link rel="stylesheet" href="main.css" />
     <script src="js/index.js" defer></script>
     <title>Kreativity - Contact</title>
@@ -139,7 +140,11 @@
  <form action method="get" target="dummyframe">  <!-- target="dummyframe" -->
      <div class="formContent content" >
      <label for="name">Name:</label>
-     <input type="text" name="name" id="name" class="input-field name"  placeholder="Your name..." required> <!-- set in this  oninput="validate()" here for javascript validation to work-->
+     <input type="text" 
+     name="name" 
+     id="name" 
+     class="input-field name"  
+     placeholder="Your name..." required> <!-- set in this  oninput="validate()" here for javascript validation to work-->
      </div>
      <div id="nameError" class="error"></div>
      <br>
@@ -168,9 +173,7 @@
          </div>
          <div id="messageError" class="error"></div>
          <input type="submit" value="Send" class="btn">
-        
-    
- </form>
+         </form>
 </div>
     </main>
     <div class="svg_container">

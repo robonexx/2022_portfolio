@@ -10,13 +10,13 @@
 }
 
 .card {
+  position: relative;
   margin: 5vh auto;
   width: 80vw;
   min-height: 300px;
-  max-height: fit-content;
-  padding: 5%;
+  max-height: 600px;
+  padding: 2%;
   box-sizing: border-box;
-  position: relative;
   border-radius: 3px;
   border: 2px solid rgba(136, 136, 136, 0.39);
   display: flex;
@@ -29,8 +29,8 @@
 .card-title {
   transition: 0.3s;
   text-align: center;
-  font-family: "Space Mono", monospace;
-  margin: 200px 0 24px;
+  font-family: Bebas;
+  margin: 240px 0 24px;
   font-size: calc(1.5vmin + 2vmax);
   opacity: 1;
   color: var(--color-alt);
@@ -46,18 +46,27 @@
 } */
 
 .card > img {
-  max-height: 200px;
-  opacity: 1;
   position: absolute;
   top: 2%;
+  min-height: fit-content;
+  max-height: 200px;
+  opacity: 1;
   transition: 0.35s;
 }
 
 .card > p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 24px;
 }
 
 @media screen and (min-width: 768px) {
   .card {
-    width: 30%;
+    width: 42.5%;
+    min-height: fit-content;
+  }
+
+  .card > p {
+    padding: 0;
   }
 }

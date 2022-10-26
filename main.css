@@ -1,3 +1,4 @@
+@import url("css/typography.css");
 @import url("css/base.css");
 @import url("css/keyframes.css");
 @import url("css/logo.css");
@@ -18,7 +19,6 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background: var(--background);
 }
 
 main {
@@ -54,8 +54,10 @@ article {
   bottom: 5vh;
   transform: translateX(-50%);
   width: 100px;
-  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.15));
+  border-radius: 50%;
   animation: bouncy 10s ease-out 0.5s infinite forwards;
+  background: transparent;
+  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.15));
 }
 
 section {
@@ -214,16 +216,10 @@ section {
   justify-content: center;
 }
 
-.about_ddd {
-  display: flex;
-  margin-bottom: 2rem;
-}
-.ddd {
-  font-size: 0.8rem;
-}
-
-.desc > div > h4:hover {
-  color: #888;
+.desc > h2,
+.desc > h6 {
+  letter-spacing: 0.5rem;
+  padding: 1rem 0;
 }
 
 .svg_shape_1 {
@@ -287,36 +283,7 @@ footer > h1 {
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(190, 51, 0);
-  }
-  body {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  h1,
-  h2,
-  h5 {
-    color: var(--text);
-  }
-
-  h3 {
-    color: #888;
-  }
-
-  h4,
-  h5,
-  h6 {
-    -webkit-text-stroke: 1px var(--text);
-  }
-
-  h4:hover,
-  h4:focus {
-    color: var(--text);
-  }
-
-  #logo path {
-    stroke: white;
+    background: rgb(245, 146, 111);
   }
 
   nav {

@@ -2,7 +2,7 @@
 .navbar .hamburger_btn {
   display: none;
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 1rem;
 }
 
@@ -14,7 +14,6 @@
 .navbar {
   border-bottom: 1px solid white;
   position: relative;
-  background: var(--secondary-color);
   opacity: 0.85;
 }
 
@@ -32,7 +31,6 @@
 
 .menu_items li {
   list-style: none;
-  font-size: calc(1vmin + 1.5vmax);
   cursor: pointer;
   z-index: 10;
   padding: 1rem;
@@ -42,7 +40,9 @@
   color: transparent;
   -webkit-text-stroke: 1px var(--text);
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: Coolvetica;
+  letter-spacing: 0.25rem;
+  font-size: calc(1.3vmin + 2.3vmax);
   color: transparent;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
@@ -51,12 +51,11 @@
 
 .navbar a:hover,
 .navbar a:active {
-  color: var(--text);
+  color: var(--bg);
 }
 
 .navbar a:visited {
-  -webkit-text-stroke: 1px var(--color-visited);
-  color: var(--color-alt);
+  -webkit-text-stroke: 1px var(--color-gray);
 }
 .navbar a:visited:hover {
   -webkit-text-stroke: 1px var(--text);
@@ -70,6 +69,7 @@
     opacity: 0.99;
     box-shadow: none;
     background: transparent;
+    border-bottom: transparent;
   }
 
   .navbar_container input[type="checkbox"],
@@ -106,7 +106,7 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
-    background-color: var(--background);
+    background: var(--bg);
 
     /* z-index: 99; */
   }
@@ -114,12 +114,21 @@
   .navbar .menu_items li {
     padding-left: 20%;
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
     font-weight: 500;
   }
 
-  .navbar a {
-    color: var(--text);
+  .navbar a:link {
+    -webkit-text-stroke: 1px var(--text);
+    text-decoration: none;
+    color: transparent;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .navbar a:hover,
+  .navbar a:active {
+    color: var(--bg);
   }
 
   .navbar_container input[type="checkbox"]:checked ~ .menu_items {
