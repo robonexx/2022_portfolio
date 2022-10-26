@@ -3,7 +3,6 @@
 @import url("css/keyframes.css");
 @import url("css/logo.css");
 @import url("css/navbar.css");
-@import url("css/darklighmode.css");
 @import url("css/road2code.css");
 @import url("css/contact.css");
 @import url("css/coffee.css");
@@ -19,6 +18,10 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+
+.theme_btn {
+  display: none;
 }
 
 main {
