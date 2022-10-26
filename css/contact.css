@@ -72,9 +72,11 @@ input[type="text"]:focus {
 
 .input-field:valid {
   background: var(--color-form-valid);
+  color: var(--gray);
 }
 .input-field:invalid {
   background: var(--text);
+  color: var(--gray);
 }
 
 input:required {
