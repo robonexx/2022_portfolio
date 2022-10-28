@@ -48,22 +48,22 @@
   }
 
   49% {
-    bottom: 5vh;
+    bottom: 10vh;
   }
 
   50% {
-    bottom: 4vh;
+    bottom: 8vh;
   }
 
   60% {
-    bottom: 5vh;
+    bottom: 10vh;
   }
 
   70% {
-    bottom: 4vh;
+    bottom: 8vh;
   }
   80% {
-    bottom: 5vh;
+    bottom: 10vh;
   }
 
   100% {
@@ -71,29 +71,29 @@
 }
 @keyframes bouncy_big_screen {
   0% {
-    bottom: 5vh;
+    bottom: 10vh;
   }
 
   25% {
   }
 
   49% {
-    bottom: 5vh;
+    bottom: 10vh;
   }
 
   50% {
-    bottom: 4vh;
+    bottom: 8vh;
   }
 
   60% {
-    bottom: 5vh;
+    bottom: 10vh;
   }
 
   70% {
-    bottom: 4vh;
+    bottom: 8vh;
   }
   80% {
-    bottom: 5vh;
+    bottom: 10vh;
   }
 
   100% {

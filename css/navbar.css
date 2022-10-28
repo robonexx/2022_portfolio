@@ -1,7 +1,7 @@
 .navbar input[type="checkbox"],
 .navbar .hamburger_btn {
   display: none;
-  position: absolute;
+  position: relative;
   top: 2rem;
   right: 1rem;
 }
@@ -14,7 +14,8 @@
 .navbar {
   border-bottom: 1px solid white;
   position: relative;
-  opacity: 0.85;
+  opacity: 0.95;
+  background-color: #282828;
 }
 
 .navbar_container {
@@ -75,6 +76,14 @@
   .navbar_container input[type="checkbox"],
   .navbar_container .hamburger_btn {
     display: block;
+  }
+
+  .navbar input[type="checkbox"],
+  .navbar .hamburger_btn {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
   }
 
   .navbar_container .hamburger_btn {
