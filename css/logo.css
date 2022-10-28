@@ -148,7 +148,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  #logo {
-    transform: scale(0.5);
+  #logo_wrapper {
+    padding-left: 0;
+    margin-right: auto;
+    width: 75%;
+    border-bottom: transparent;
   }
 }

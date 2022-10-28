@@ -1,9 +1,16 @@
 .navbar input[type="checkbox"],
 .navbar .hamburger_btn {
   display: none;
-  position: relative;
-  top: 2rem;
+  position: absolute;
+  top: 4rem;
   right: 1rem;
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .container {
@@ -78,14 +85,6 @@
     display: block;
   }
 
-  .navbar input[type="checkbox"],
-  .navbar .hamburger_btn {
-    display: none;
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-  }
-
   .navbar_container .hamburger_btn {
     display: block;
     z-index: 1000;
@@ -94,8 +93,9 @@
 
   .navbar_container {
     display: block;
-    position: relative;
-    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .navbar_container > input[type="checkbox"] {
@@ -201,11 +201,5 @@
     margin-top: 0px;
     transform: rotate(-45deg);
     transition: background 0.4s ease-in-out, transform 0.4s ease-out;
-  }
-}
-
-@media (max-width: 500px) {
-  .navbar_container input[type="checkbox"]:checked ~ #logo {
-    display: none;
   }
 }
