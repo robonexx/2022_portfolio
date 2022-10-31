@@ -7,7 +7,7 @@
 @import url("css/contact.css");
 @import url("css/coffee.css");
 @import url("css/card.css");
-@import url("css/back_btn.css");
+@import url("css/buttons.css");
 
 header {
   position: fixed;
@@ -32,6 +32,9 @@ main {
   width: 80%;
   margin: 0 auto;
   transition: all 0.4s ease-in-out;
+}
+
+.arrow_down {
 }
 
 article {
@@ -247,17 +250,45 @@ section {
 } */
 
 footer {
-  height: 100px;
+  position: relative;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #282828;
+  overflow: hidden;
 }
 
-footer > h1 {
+footer > h3 {
   margin: 0;
   padding: 0;
-  font-size: 90px;
+}
+
+footer > h3 > a {
+  text-transform: uppercase;
+  color: var(--color-alt);
+  overflow: hidden;
+}
+
+footer > h3 > a::before {
+  content: attr(data-text);
+  width: 0;
+  height: fit-content;
+  position: absolute;
+  color: #fff;
+  background-color: var(--bg);
+  width: 0;
+  overflow: hidden;
+  transition: 0.4s linear;
+  z-index: 10;
+}
+
+footer > h3:hover > a::before {
+  width: 400px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  overflow: hidden;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 /* MEDIA QUERIES */

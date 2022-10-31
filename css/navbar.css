@@ -57,17 +57,19 @@
   cursor: pointer;
 }
 
+.navbar a:link:hover,
 .navbar a:hover,
 .navbar a:active {
-  color: var(--bg);
+  -webkit-text-stroke: 1px var(--text);
+  color: var(--text);
 }
 
 .navbar a:visited {
   -webkit-text-stroke: 1px var(--color-gray);
 }
 .navbar a:visited:hover {
-  -webkit-text-stroke: 1px var(--text);
-  color: var(--text);
+  -webkit-text-stroke: 1px var(--color-gray);
+  color: var(--color-gray);
 }
 
 /* Media queries */

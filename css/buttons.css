@@ -18,3 +18,21 @@
   background-color: var(--text);
   color: var(--color-alt);
 }
+.btn {
+  position: relative;
+  z-index: 100;
+  font-size: calc(1vmin + 1.25vmax);
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 12px;
+  border-radius: 5%;
+  background-color: var(--color-alt);
+  color: var(--text);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--text);
+  color: var(--color-alt);
+}
