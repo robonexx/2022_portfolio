@@ -47,7 +47,7 @@
 
 .card > img {
   position: absolute;
-  top: 2%;
+  top: 10%;
   min-height: fit-content;
   max-height: 200px;
   opacity: 1;

@@ -1,15 +1,22 @@
 /* importing all css files used to main css */
-
 @import url("css/typography.css");
 @import url("css/base.css");
 @import url("css/keyframes.css");
-@import url("css/logo.css");
 @import url("css/navbar.css");
+
+/* pages */
+@import url("css/pages.css");
 @import url("css/resources_page.css");
 @import url("css/contact_page.css");
-@import url("css/coffee.css");
+
+/* component */
 @import url("css/card.css");
 @import url("css/buttons.css");
+
+/* SVG / logo */
+@import url("css/logo.css");
+@import url("css/coffee.css");
+
 
 header {
   position: fixed;
@@ -274,9 +281,16 @@ section#about > h2 {
 .where_to_start_content > ul > li {
  padding: 1rem 0;
  max-width: 80%;
+ font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 125%;
 }
 .where_to_start_content > ul > li > a {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 125%;
   color: var(--color-alt);
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: color 0.4s ease-in-out;
 }
 .where_to_start_content > ul > li > a > span {
   color: var(--color-alt);
@@ -373,7 +387,7 @@ footer > h3:hover > a::before {
     align-items: flex-start;
   }
 
-  section {
+  section.first {
     padding: 20rem 0 0;
   }
 

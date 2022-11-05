@@ -1,14 +1,14 @@
 .hero_code {
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 24vh;
 }
 
 .resources_page_a {
+  color: var(--color-alt);
+  cursor: pointer;
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
-  z-index: 1000;
-  cursor: pointer;
 }
