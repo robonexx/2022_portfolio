@@ -2,6 +2,8 @@
 :root {
   --bg: #f8f8f8;
   --text: #232328;
+  --color-white: #f8f8f8;
+  --color-black: #121212;
   --color-alt: #ff7750;
   --color-visited: #666;
   --color-gray: #999;
@@ -41,13 +43,13 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
   height: 100%;
   font-family: "Lato", sans-serif;
-  scroll-behavior: smooth;
   overflow-x: hidden;
   background: var(--bg);
   color: var(--text);
@@ -102,14 +104,23 @@ h1:active {
   cursor: pointer;
 }
 
+
 h2 {
+  font-size: calc(1.5vmin + 1.75vmax);
+  color: var(--text);
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+/* h2 {
   font-size: calc(2.25vmin + 2.75vmax);
   font-weight: 900;
   letter-spacing: 2px;
   cursor: pointer;
   text-transform: uppercase;
 }
-
+ */
 h3 {
   font-size: calc(1vmin + 1.5vmax);
   margin: 2% 0;
@@ -131,14 +142,6 @@ h4:focus {
   color: var(--text);
 }
 
-h5 {
-  font-size: calc(1.5vmin + 1.75vmax);
-  color: var(--text);
-  font-weight: 900;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: color 0.4s ease-in-out;
-}
 h6 {
   font-size: calc(1.5vmin + 1.75vmax);
   color: transparent;

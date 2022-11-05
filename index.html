@@ -1,132 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name = "color-scheme" content = "light dark"/>
-    <link rel="stylesheet" href="main.css" />
-    <script src="/js/index.js" type="module" defer></script>
-    <title>Road2Code</title>
-  </head>
-  <body class="dark_theme">
-    <div class="theme_btn">      
-          <input type="checkbox" id="darkmode" />
-    </div>
 
-    <!-- testing some other stuff -->
-    <header>
-      <div id="logo_wrapper">
-        <a href="/index.html"></a>
-        <svg id="logo" width="442" height="82" viewBox="0 0 442 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 45.2139V36.7861L35.7352 21.7528V30.8639L11.0942 41L35.7352 51.1361V60.2472L0 45.2139Z" />
-          <path d="M41.0359 1.13889H60.0713C66.689 1.13889 71.5159 2.65741 74.5523 5.69445C77.5886 8.65555 79.1067 13.2491 79.1067 19.475V24.3722C79.1067 32.6481 76.304 37.887 70.6985 40.0889V40.3167C73.8126 41.2278 75.9926 43.088 77.2382 45.8972C78.5618 48.7065 79.2235 52.4648 79.2235 57.1722V71.1806C79.2235 73.4583 79.3014 75.3185 79.4571 76.7611C79.6128 78.1278 80.0021 79.4944 80.6249 80.8611H67.5454C67.0782 79.5704 66.7668 78.3556 66.6111 77.2167C66.4554 76.0778 66.3775 74.0278 66.3775 71.0667V56.4889C66.3775 52.8444 65.7547 50.3009 64.509 48.8583C63.3412 47.4157 61.2781 46.6944 58.3196 46.6944H53.8819V80.8611H41.0359V1.13889ZM58.5532 35.3056C61.1224 35.3056 63.0298 34.6602 64.2755 33.3694C65.599 32.0787 66.2608 29.9148 66.2608 26.8778V20.7278C66.2608 17.8426 65.7158 15.7546 64.6258 14.4639C63.6137 13.1731 61.9788 12.5278 59.721 12.5278H53.8819V35.3056H58.5532Z" />
-          <path d="M100.866 82C94.5593 82 89.7323 80.2537 86.3846 76.7611C83.0369 73.2685 81.363 68.3333 81.363 61.9556V20.0444C81.363 13.6667 83.0369 8.73148 86.3846 5.23889C89.7323 1.7463 94.5593 0 100.866 0C107.172 0 111.999 1.7463 115.346 5.23889C118.694 8.73148 120.368 13.6667 120.368 20.0444V61.9556C120.368 68.3333 118.694 73.2685 115.346 76.7611C111.999 80.2537 107.172 82 100.866 82ZM100.866 70.6111C105.303 70.6111 107.522 67.9917 107.522 62.7528V19.2472C107.522 14.0083 105.303 11.3889 100.866 11.3889C96.4278 11.3889 94.209 14.0083 94.209 19.2472V62.7528C94.209 67.9917 96.4278 70.6111 100.866 70.6111Z" />
-          <path d="M133.143 1.13889H150.543L163.856 80.8611H151.01L148.675 65.0306V65.2583H134.077L131.741 80.8611H119.83L133.143 1.13889ZM147.157 54.4389L141.434 15.0333H141.201L135.595 54.4389H147.157Z" />
-          <path d="M164.25 1.13889H183.869C190.253 1.13889 195.041 2.80926 198.233 6.15C201.425 9.49074 203.021 14.388 203.021 20.8417V61.1583C203.021 67.612 201.425 72.5093 198.233 75.85C195.041 79.1907 190.253 80.8611 183.869 80.8611H164.25V41V1.13889ZM183.635 69.4722C185.737 69.4722 187.333 68.8648 188.423 67.65C189.591 66.4352 190.175 64.4611 190.175 61.7278V20.2722C190.175 17.5389 189.591 15.5648 188.423 14.35C187.333 13.1352 185.737 12.5278 183.635 12.5278H177.096V69.4722H183.635Z" />
-          <path d="M205.619 72.2056C205.619 66.5111 206.554 61.6519 208.422 57.6278C210.291 53.5278 213.638 49.0102 218.465 44.075C223.215 39.1398 226.484 34.9259 228.275 31.4333C230.144 27.9407 231.078 24.2963 231.078 20.5C231.078 17.0833 230.494 14.7296 229.326 13.4389C228.236 12.0722 226.601 11.3889 224.421 11.3889C219.984 11.3889 217.765 14.0083 217.765 19.2472V27.7889H205.619V20.0444C205.619 13.5907 207.254 8.65556 210.524 5.23889C213.794 1.7463 218.543 0 224.772 0C231 0 235.749 1.7463 239.019 5.23889C242.289 8.65556 243.924 13.5907 243.924 20.0444C243.924 24.9037 242.717 29.6491 240.304 34.2806C237.968 38.912 233.881 44.2269 228.042 50.225C224.227 54.1731 221.658 57.4 220.334 59.9056C219.01 62.3352 218.349 64.9546 218.349 67.7639V69.4722H242.756V80.8611H205.619V72.2056Z" />
-          <path d="M264.873 82C258.723 82 254.013 80.2917 250.743 76.875C247.551 73.4583 245.955 68.637 245.955 62.4111V19.5889C245.955 13.363 247.551 8.54167 250.743 5.125C254.013 1.70833 258.723 0 264.873 0C271.024 0 275.695 1.70833 278.887 5.125C282.157 8.54167 283.792 13.363 283.792 19.5889V28.0167H271.647V18.7917C271.647 13.8565 269.506 11.3889 265.224 11.3889C260.942 11.3889 258.801 13.8565 258.801 18.7917V63.3222C258.801 68.1815 260.942 70.6111 265.224 70.6111C269.506 70.6111 271.647 68.1815 271.647 63.3222V51.1361H283.792V62.4111C283.792 68.637 282.157 73.4583 278.887 76.875C275.695 80.2917 271.024 82 264.873 82Z" />
-          <path d="M304.207 82C297.901 82 293.074 80.2537 289.726 76.7611C286.378 73.2685 284.704 68.3333 284.704 61.9556V20.0444C284.704 13.6667 286.378 8.73148 289.726 5.23889C293.074 1.7463 297.901 0 304.207 0C310.513 0 315.34 1.7463 318.688 5.23889C322.036 8.73148 323.709 13.6667 323.709 20.0444V61.9556C323.709 68.3333 322.036 73.2685 318.688 76.7611C315.34 80.2537 310.513 82 304.207 82ZM304.207 70.6111C308.645 70.6111 310.863 67.9917 310.863 62.7528V19.2472C310.863 14.0083 308.645 11.3889 304.207 11.3889C299.769 11.3889 297.55 14.0083 297.55 19.2472V62.7528C297.55 67.9917 299.769 70.6111 304.207 70.6111Z" />
-          <path d="M326.558 1.13889H346.177C352.561 1.13889 357.349 2.80926 360.541 6.15C363.733 9.49074 365.329 14.388 365.329 20.8417V61.1583C365.329 67.612 363.733 72.5093 360.541 75.85C357.349 79.1907 352.561 80.8611 346.177 80.8611H326.558V1.13889ZM345.944 69.4722C348.046 69.4722 349.642 68.8648 350.732 67.65C351.899 66.4352 352.483 64.4611 352.483 61.7278V20.2722C352.483 17.5389 351.899 15.5648 350.732 14.35C349.642 13.1352 348.046 12.5278 345.944 12.5278H339.404V69.4722H345.944Z" />
-          <path d="M368.161 1.13889H403.196V12.5278H381.007V33.5972H398.641V44.9861H381.007V69.4722H403.196V80.8611H368.161V1.13889Z" />
-          <path d="M406.265 51.1361L430.906 41L406.265 30.8639V21.7528L442 36.7861V45.2139L406.265 60.2472V51.1361Z" />
-          </svg>
-      </div> 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="main.css" />
+  <script src="/js/index.js" type="module" defer></script>
+  <title>Road2Code</title>
+</head>
+
+<body class="dark_theme">
+  <div class="theme_btn">
+    <input type="checkbox" id="darkmode" />
+  </div>
+
+  <!-- testing some other stuff -->
+  <header>
+    <div id="logo_wrapper">
+      <a href="/index.html"></a>
+      <svg id="logo" width="442" height="82" viewBox="0 0 442 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 45.2139V36.7861L35.7352 21.7528V30.8639L11.0942 41L35.7352 51.1361V60.2472L0 45.2139Z" />
+        <path
+          d="M41.0359 1.13889H60.0713C66.689 1.13889 71.5159 2.65741 74.5523 5.69445C77.5886 8.65555 79.1067 13.2491 79.1067 19.475V24.3722C79.1067 32.6481 76.304 37.887 70.6985 40.0889V40.3167C73.8126 41.2278 75.9926 43.088 77.2382 45.8972C78.5618 48.7065 79.2235 52.4648 79.2235 57.1722V71.1806C79.2235 73.4583 79.3014 75.3185 79.4571 76.7611C79.6128 78.1278 80.0021 79.4944 80.6249 80.8611H67.5454C67.0782 79.5704 66.7668 78.3556 66.6111 77.2167C66.4554 76.0778 66.3775 74.0278 66.3775 71.0667V56.4889C66.3775 52.8444 65.7547 50.3009 64.509 48.8583C63.3412 47.4157 61.2781 46.6944 58.3196 46.6944H53.8819V80.8611H41.0359V1.13889ZM58.5532 35.3056C61.1224 35.3056 63.0298 34.6602 64.2755 33.3694C65.599 32.0787 66.2608 29.9148 66.2608 26.8778V20.7278C66.2608 17.8426 65.7158 15.7546 64.6258 14.4639C63.6137 13.1731 61.9788 12.5278 59.721 12.5278H53.8819V35.3056H58.5532Z" />
+        <path
+          d="M100.866 82C94.5593 82 89.7323 80.2537 86.3846 76.7611C83.0369 73.2685 81.363 68.3333 81.363 61.9556V20.0444C81.363 13.6667 83.0369 8.73148 86.3846 5.23889C89.7323 1.7463 94.5593 0 100.866 0C107.172 0 111.999 1.7463 115.346 5.23889C118.694 8.73148 120.368 13.6667 120.368 20.0444V61.9556C120.368 68.3333 118.694 73.2685 115.346 76.7611C111.999 80.2537 107.172 82 100.866 82ZM100.866 70.6111C105.303 70.6111 107.522 67.9917 107.522 62.7528V19.2472C107.522 14.0083 105.303 11.3889 100.866 11.3889C96.4278 11.3889 94.209 14.0083 94.209 19.2472V62.7528C94.209 67.9917 96.4278 70.6111 100.866 70.6111Z" />
+        <path
+          d="M133.143 1.13889H150.543L163.856 80.8611H151.01L148.675 65.0306V65.2583H134.077L131.741 80.8611H119.83L133.143 1.13889ZM147.157 54.4389L141.434 15.0333H141.201L135.595 54.4389H147.157Z" />
+        <path
+          d="M164.25 1.13889H183.869C190.253 1.13889 195.041 2.80926 198.233 6.15C201.425 9.49074 203.021 14.388 203.021 20.8417V61.1583C203.021 67.612 201.425 72.5093 198.233 75.85C195.041 79.1907 190.253 80.8611 183.869 80.8611H164.25V41V1.13889ZM183.635 69.4722C185.737 69.4722 187.333 68.8648 188.423 67.65C189.591 66.4352 190.175 64.4611 190.175 61.7278V20.2722C190.175 17.5389 189.591 15.5648 188.423 14.35C187.333 13.1352 185.737 12.5278 183.635 12.5278H177.096V69.4722H183.635Z" />
+        <path
+          d="M205.619 72.2056C205.619 66.5111 206.554 61.6519 208.422 57.6278C210.291 53.5278 213.638 49.0102 218.465 44.075C223.215 39.1398 226.484 34.9259 228.275 31.4333C230.144 27.9407 231.078 24.2963 231.078 20.5C231.078 17.0833 230.494 14.7296 229.326 13.4389C228.236 12.0722 226.601 11.3889 224.421 11.3889C219.984 11.3889 217.765 14.0083 217.765 19.2472V27.7889H205.619V20.0444C205.619 13.5907 207.254 8.65556 210.524 5.23889C213.794 1.7463 218.543 0 224.772 0C231 0 235.749 1.7463 239.019 5.23889C242.289 8.65556 243.924 13.5907 243.924 20.0444C243.924 24.9037 242.717 29.6491 240.304 34.2806C237.968 38.912 233.881 44.2269 228.042 50.225C224.227 54.1731 221.658 57.4 220.334 59.9056C219.01 62.3352 218.349 64.9546 218.349 67.7639V69.4722H242.756V80.8611H205.619V72.2056Z" />
+        <path
+          d="M264.873 82C258.723 82 254.013 80.2917 250.743 76.875C247.551 73.4583 245.955 68.637 245.955 62.4111V19.5889C245.955 13.363 247.551 8.54167 250.743 5.125C254.013 1.70833 258.723 0 264.873 0C271.024 0 275.695 1.70833 278.887 5.125C282.157 8.54167 283.792 13.363 283.792 19.5889V28.0167H271.647V18.7917C271.647 13.8565 269.506 11.3889 265.224 11.3889C260.942 11.3889 258.801 13.8565 258.801 18.7917V63.3222C258.801 68.1815 260.942 70.6111 265.224 70.6111C269.506 70.6111 271.647 68.1815 271.647 63.3222V51.1361H283.792V62.4111C283.792 68.637 282.157 73.4583 278.887 76.875C275.695 80.2917 271.024 82 264.873 82Z" />
+        <path
+          d="M304.207 82C297.901 82 293.074 80.2537 289.726 76.7611C286.378 73.2685 284.704 68.3333 284.704 61.9556V20.0444C284.704 13.6667 286.378 8.73148 289.726 5.23889C293.074 1.7463 297.901 0 304.207 0C310.513 0 315.34 1.7463 318.688 5.23889C322.036 8.73148 323.709 13.6667 323.709 20.0444V61.9556C323.709 68.3333 322.036 73.2685 318.688 76.7611C315.34 80.2537 310.513 82 304.207 82ZM304.207 70.6111C308.645 70.6111 310.863 67.9917 310.863 62.7528V19.2472C310.863 14.0083 308.645 11.3889 304.207 11.3889C299.769 11.3889 297.55 14.0083 297.55 19.2472V62.7528C297.55 67.9917 299.769 70.6111 304.207 70.6111Z" />
+        <path
+          d="M326.558 1.13889H346.177C352.561 1.13889 357.349 2.80926 360.541 6.15C363.733 9.49074 365.329 14.388 365.329 20.8417V61.1583C365.329 67.612 363.733 72.5093 360.541 75.85C357.349 79.1907 352.561 80.8611 346.177 80.8611H326.558V1.13889ZM345.944 69.4722C348.046 69.4722 349.642 68.8648 350.732 67.65C351.899 66.4352 352.483 64.4611 352.483 61.7278V20.2722C352.483 17.5389 351.899 15.5648 350.732 14.35C349.642 13.1352 348.046 12.5278 345.944 12.5278H339.404V69.4722H345.944Z" />
+        <path
+          d="M368.161 1.13889H403.196V12.5278H381.007V33.5972H398.641V44.9861H381.007V69.4722H403.196V80.8611H368.161V1.13889Z" />
+        <path d="M406.265 51.1361L430.906 41L406.265 30.8639V21.7528L442 36.7861V45.2139L406.265 60.2472V51.1361Z" />
+      </svg>
+    </div>
     <nav class="navbar">
-            <input type="checkbox" name="" id="">
-              <div class="hamburger_btn">             
-                  <span class="line" data-text=""></span>
-                 <!--  <span class="line line2"></span>
+      <input type="checkbox" name="" id="">
+      <div class="hamburger_btn">
+        <span class="line" data-text=""></span>
+        <!--  <span class="line line2"></span>
                   <span class="line line3"></span> -->
-              </div>
-           <ul class="menu_items">
-                <li ><a href="index.html">Home</a></li>
-                <li><a href="/index.html#about">About</a></li>
-                <li><a href="/index.html#where2start">Where2start?</a></li>
-                <li><a href="/resources_page.html">Resources</a></li>
-                <li><a href="/contact_page.html">Contact</a></li>
-            </ul> 
+      </div>
+      <ul class="menu_items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/index.html#about">About</a></li>
+        <li><a href="/index.html#where2start">Where2start?</a></li>
+        <li><a href="/resources_page.html">Resources</a></li>
+        <li><a href="/contact_page.html">Contact</a></li>
+      </ul>
     </nav>
-    </header>
-    <main>
-      <article>
-        <div class="hero">
-          <br/>
-          <div class="svg_shape_1">
-            <img src="/assets/svg/svg_shapes.svg"/>
-          </div>
-          <div class="headline">
-            <h6>Welcome to</h6>
-            <h1>ROAD 2 CODE</h1>
-          </div>
-          <div class="images">
-            <img class="image1" src="assets/images/robot.png" alt="Robot PNGs by Vecteezy" />
-            <!-- here you can find the image href="https://www.vecteezy.com/free-png/robot" by Vecteezy -->
-            <div class="image2"></div>
-         
+  </header>
+  <main>
+    <article>
+      <div class="hero">
+        <br />
+        <div class="svg_shape_1">
+          <img src="/assets/svg/svg_shapes.svg" />
         </div>
-        <a href="#about">
+        <div class="headline">
+          <h6>Welcome to</h6>
+          <h1>ROAD 2 CODE</h1>
+        </div>
+        <div class="images">
+          <img class="image1" src="assets/images/robot.png" alt="Robot PNGs by Vecteezy" />
+          <!-- here you can find the image href="https://www.vecteezy.com/free-png/robot" by Vecteezy -->
+          <div class="image2"></div>
+
+        </div>
+        <a href="#where2start">
           <img class="scroll_down" src="assets/svg/scroll_down.svg" />
         </a>
-      </article>
-      <section>
-       
-      </section>
-      <section id="about">
-        <h5>This website is built with the focus on helping</h5>
-          <h5>people who start with webdevelopement</h5>
-          <h5>Here you can find some resources</h5>
-          <h5>What to learn and how to go about it.</h5>
-          <h5>Goal is to help others who starts coding</h5>
-          </section>
-        <div class="desc">
-              <p>
-                This site is built to help anyone who is getting in to coding. We all know how confusing it can be when starting so here 
-                you´ll get advice on how to start and a short explenation on some of the techniques and "languages" used, such as 
-                HTML, CSS, JAVASCRIPT, FRAMEWORKS, EDITOR, GITHUB, etc
-              </br></br> 
-              Who am I? </br>My name is Robert Wägar aka "Rob-One" </br>I´m a developer with the focus on frontend and web/app, I´ve found a second passion where I feel I can be ceative and at the same time work with problem solving
-              </br></br> 
-                When not coding, I also work as a dance teacher in the styles LOCKING and HIP-HOP, under the umbrella term "Streetdance"
-              </br></br>
-                As a developer I like the fact that you have to be openminded and due to fast pased
-                changes in the technique part you must keep learning. This is nothing new to me as in the artforms & culture
-                of HIP-HOP, we have the 
-              </br>
-                 Quote - <b>ALWAYS A STUDENT</b>. 
-              </p>
-        </div>
-      </div>
-      <section>
-       
-      </section>
-      <section id="where2start">
-        <div class="svg_shape_2">
-          <img src="/assets/svg/svg_shape_2.svg"/>
-        </div>
-        <h1>Where to start?</h1>
-        <div class="where_to_start_content">
-          the content
-        </div>
-      </section>
-      <a class="btn" href="/resources.html">Resources</a>
-      <section>      
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae iure at
-        qui. Sequi nam facilis provident quibusdam molestiae voluptatum, a
-        repellat iure sunt? Recusandae id nihil doloremque earum minus sapiente
-        in culpa esse ut minima, molestiae architecto est voluptate, rem veniam
-        dolore ea ullam eaque alias distinctio debitis mollitia consequuntur
-        consectetur cum. Nostrum quibusdam minima sunt labore molestias
-        voluptate eligendi aliquam ad iure voluptates, ipsa illo sit omnis
-        laudantium, ullam libero quam quidem. Praesentium amet minus neque
-        provident sunt vitae pariatur iure officiis rem facere minima assumenda
-        officia asperiores quaerat consectetur quia porro tempora ipsam nostrum,
-        iste non ut alias?
-      </section>
-    </main>
+    </article>
 
-    <footer>
-      <h3>&#169 <a data-text="Check it out!" href="https://robertwagar.se" target="_blank">robertwagar.se</a></h3>
-    </footer>
-  </body>
+    <section id="about">
+      <h2>This website is built with the focus on helping</h2>
+      <h2>people who start with webdevelopement</h2>
+      <h2>Here you can find some resources</h2>
+      <h2>What to learn and how to go about it.</h2>
+      <h2>Goal is to help others who starts coding</h2>
+      <div class="desc">
+        <p>
+          We all know how confusing it can be when
+          starting
+          so here
+          you´ll get my advice on how to start and a short explenation on some of the techniques and "languages" used,
+          such
+          as
+          <a href="/pages/html.html"><span>HTML,</span></a>
+          <a href="/pages/css.html"><span>CSS,</span></a>
+          <a href="/pages/js.html"> <span>JAVASCRIPT,</span></a>
+          <a href=""><span>FRAMEWORKS,</span></a>
+          <a href=""><span>EDITOR (that I use),</span></a>
+          <a href=""><span>Version control</span></a>
+          and more...
+          </br></br>
+          Who am I? </br>My name is Robert Wägar aka "Rob-One" </br>I´m a developer with the focus on frontend and
+          web/app, I´ve found a second passion where I feel I can be ceative and at the same time work with problem
+          solving
+          </br></br>
+          When not coding, I also work as a dance teacher in the styles LOCKING and HIP-HOP, under the umbrella term
+          "Streetdance"
+          </br></br>
+          As a developer I like the fact that you have to be openminded and due to fast pased
+          changes in the technique part you must keep learning. This is nothing new to me as in the artforms & culture
+          of HIP-HOP, we have the
+          </br>
+          Quote - <b>ALWAYS A STUDENT</b>.
+        </p>
+      </div>
+    </section>
+
+    <section>
+
+    </section>
+    <section id="where2start">
+      <div class="svg_shape_2">
+        <img src="/assets/svg/svg_shape_2.svg" />
+      </div>
+      <h2>Where to start?</h2>
+      <div class="where_to_start_content">
+        <ul>
+          <li>What I got recommended to try out and did was this course at FreeCodeCamp</br><a
+              href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive webdesign -
+              freecodecamp</a></li>
+          <li>Then i started watching youtube and checked Brad Traversys HTML tutorial </br><a
+              href="https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU">HTML -
+              Tutorial</a></li>
+          <li>Then a CSS tutorial</br><a
+              href="https://www.youtube.com/watch?v=yfoY53QXEnI&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=2">CSS -
+              Tutorial</a>
+          </li>
+          <li>Then I started reading the ELOQUENT JAVASCRIPT BOOK, its also available online</br><a
+              href="https://eloquentjavascript.net/">Eloquent Javascript</a></li>
+          <li>Then I went on and bought the Developer Bootcamp course at UDEMY by Colt Steele (its also updated)</br><a
+              href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web-developer bootcamp - UDEMY</a>
+          </li>
+        </ul>
+        From there I then continued trying to build small projects and also continued on to frameworks, in my case I
+        chose React and Next. Also tried out Wordpress just to learn it a bit, and used in one project
+      </div>
+    </section>
+    <h6>Check the resouces page for more...</h6>
+    <a class="btn" href="/resources_page.html">Resources</a>
+    <section>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae iure at
+      qui. Sequi nam facilis provident quibusdam molestiae voluptatum, a
+      repellat iure sunt? Recusandae id nihil doloremque earum minus sapiente
+      in culpa esse ut minima, molestiae architecto est voluptate, rem veniam
+      dolore ea ullam eaque alias distinctio debitis mollitia consequuntur
+      consectetur cum. Nostrum quibusdam minima sunt labore molestias
+      voluptate eligendi aliquam ad iure voluptates, ipsa illo sit omnis
+      laudantium, ullam libero quam quidem. Praesentium amet minus neque
+      provident sunt vitae pariatur iure officiis rem facere minima assumenda
+      officia asperiores quaerat consectetur quia porro tempora ipsam nostrum,
+      iste non ut alias?
+    </section>
+  </main>
+
+  <footer>
+    <h3>&#169 <a data-text="Check it out!" href="https://robertwagar.se" target="_blank">robertwagar.se</a></h3>
+  </footer>
+</body>
+
 </html>

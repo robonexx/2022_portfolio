@@ -1,12 +1,13 @@
 #logo_wrapper {
   position: relative;
+  padding-left: 2rem;
+  margin-right: auto;
+  width: 75%;
+  border-bottom: transparent;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: inherit;
-  height: inherit;
-  padding-left: 2rem;
-  border-bottom: 1px solid #888;
+
 }
 
 #logo {
@@ -147,11 +148,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #logo_wrapper {
-    padding-left: 0;
-    margin-right: auto;
-    width: 75%;
-    border-bottom: transparent;
+    padding-left: 0rem;
+    border-bottom: 1px solid #888;
+    width: inherit;
+    height: inherit;  
   }
 }
