@@ -145,7 +145,7 @@ h6 {
 }
 
 .page_lists > li {
-  font-size: calc(0.8vmin + 1.2vmax);
+  font-size: clamp(1rem, 2.5vw, 2rem);
   color: var(--color-alt);
   padding: 0.5rem 0;
   list-style-type: circle;
