@@ -21,12 +21,11 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: var(--color-dimmed);
 }
-
+/* 
 .theme_btn {
   display: none;
-}
+} */
 
 main {
   margin: 0 auto;
@@ -103,6 +102,10 @@ section {
   flex-direction: column;
   overflow: hidden;
   padding: 2rem 0;
+}
+
+section#about > h2 {
+  text-align: center;
 }
 
 .image1 {
@@ -257,25 +260,35 @@ section {
 }
 
 .where_to_start_content {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   height: fit-content;
   background-color: #282828;
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 .where_to_start_content > ul {
-  list-style-type: decimal-leading-zero;
+  list-style-type: none;
 }
 .where_to_start_content > ul > li {
-
  padding: 1rem 0;
+ max-width: 80%;
 }
 .where_to_start_content > ul > li > a {
   color: var(--color-alt);
 }
 .where_to_start_content > ul > li > a > span {
   color: var(--color-alt);
+}
+.where_to_start_content > p {
+  max-width: 60%;
+  font-size: 1rem;
+}
+
+.checkmore {
+  margin: 2rem 0;
+  text-align: center;
 }
 
 
@@ -367,6 +380,7 @@ footer > h3:hover > a::before {
   #about > .images {
     align-self: center;
   }
+
   .desc > h6 {
     align-self: flex-start;
   }
@@ -375,7 +389,7 @@ footer > h3:hover > a::before {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 6vh;
+    bottom: 2vh;
     animation: bouncy_big_screen 10s ease-out 0.5s infinite forwards;
   }
 
