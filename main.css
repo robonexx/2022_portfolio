@@ -273,7 +273,7 @@ section#about > h2 {
   align-items: flex-start;
   height: fit-content;
   background-color: #282828;
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 .where_to_start_content > ul {
   list-style-type: none;
@@ -433,7 +433,7 @@ footer > h3:hover > a::before {
   }
 
   .where_to_start_content {
-    height: 600px;
+    height: fit-content;
     background-color: #282828;
   }
   .where_to_start_content p,  
