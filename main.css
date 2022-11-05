@@ -3,8 +3,8 @@
 @import url("css/keyframes.css");
 @import url("css/logo.css");
 @import url("css/navbar.css");
-@import url("css/road2code.css");
-@import url("css/contact.css");
+@import url("css/resources_page.css");
+@import url("css/contact_page.css");
 @import url("css/coffee.css");
 @import url("css/card.css");
 @import url("css/buttons.css");
@@ -48,7 +48,7 @@ article {
 
 .svg_shape_1 {
   position: absolute;
-  top: -10vh;
+  top: -20vh;
   left: -20vw;
   transform: rotate(20deg) scale(0.6);
   z-index: -1;
@@ -71,7 +71,7 @@ article {
 .images {
   position: relative;
   width: 100%;
-  width: 420px;
+  width: 100%;
   min-width: 260px;
   height: 360px;
   display: flex;

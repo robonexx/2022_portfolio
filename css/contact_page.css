@@ -1,4 +1,5 @@
 .contact_body {
+  width: inherit;
   height: 100vh;
 }
 
@@ -12,10 +13,17 @@
 /* ============ contact form section =========================*/
 
 .form_container {
+  margin: 2rem 0;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  background: var(--text);
+  box-shadow: 0px 0px 1px black, 0px 0px 1px white;
   display: flex;
   flex-flow: column;
   margin: 2rem auto;
-  width: 40vw;
+  width: 100%;
   min-width: 360px;
   height: fit-content;
   padding: 25px 15px;
@@ -24,15 +32,11 @@
   z-index: 10;
 }
 
-.contactForm {
-  padding: 2rem;
-}
-
 label {
   min-width: 100px;
   padding: 0.25rem 0 0.25rem 1rem;
   font-family: "", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--bg);
   text-decoration: none;
   /* color: var(--primary-color); */
@@ -56,8 +60,8 @@ input[type="text"]:focus {
 }
 
 .input-field {
-  max-width: 30em;
-  min-width: 50%;
+  min-width: 80%;
+  max-width: 100%;
   border: none;
   outline: none;
   background: var(--text);
@@ -141,7 +145,7 @@ input:required:invalid {
   border: 1px solid white;
 } */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .contact_body > main {
     width: 100%;
   }
