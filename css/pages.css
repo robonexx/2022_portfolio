@@ -1,7 +1,7 @@
 .main_pages {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   transition: all 0.4s ease-in-out;
 }
@@ -13,14 +13,6 @@
 
 .page_lists {
   margin: 5% 0;
-}
-
-.page_lists > li {
-  font-size: calc(0.8vmin + 1.2vmax);
-  color: var(--color-alt);
-  padding: 0.5rem 0;
-  list-style-type: circle;
-  
 }
 
 .example {
@@ -40,3 +32,13 @@
   background-color: white;
   color: orangered;
 }
+
+@media screen and (min-width: 768px) {
+  .main_pages {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+  }
+  }

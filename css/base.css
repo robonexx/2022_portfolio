@@ -112,14 +112,7 @@ h2 {
   letter-spacing: 2px;
   transition: color 0.4s ease-in-out;
 }
-/* h2 {
-  font-size: calc(2.25vmin + 2.75vmax);
-  font-weight: 900;
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
- */
+
 h3 {
   font-size: calc(1vmin + 1.5vmax);
   margin: 2% 0;
@@ -149,6 +142,13 @@ h6 {
   letter-spacing: 2px;
   cursor: pointer;
   transition: color 0.4s ease-in-out;
+}
+
+.page_lists > li {
+  font-size: calc(0.8vmin + 1.2vmax);
+  color: var(--color-alt);
+  padding: 0.5rem 0;
+  list-style-type: circle;
 }
 
 .inverted {
