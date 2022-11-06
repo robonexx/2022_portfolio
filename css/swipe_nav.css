@@ -9,7 +9,7 @@
   padding: 0
 }
 .swipe_nav.nav-tabs {
-   /* apply iOS momentum scrolling effect to this element */
+  /* swipe effect on ios */
   display: block;
   overflow: auto;
   white-space: nowrap
@@ -19,26 +19,31 @@
  }
 .swipe_nav.nav-tabs > li > a {
   display: block;
-  background: var(--color-black);
-  width: 120px;
+  width: 160px;
+  padding: 16px;
   text-align: center;
-  color: var(--bg);
+  background: var(--color-black);
+  color: var(--color-alt);
+  text-shadow: 0 2px 2px var(--bg);
   text-decoration: none;
   font-size: clamp(1rem, 2.5vw, 2rem);
-  padding: 8px 14px;
   font-weight: 800;
-  text-shadow: 0 2px 2px var(--color-alt);
   transition: all 0.3s ease-in-out;
 }
 .swipe_nav.nav-tabs > li > a:hover {
   background: var(--color-black);
-  color: var(--color-alt);
-  text-shadow: 0 2px 2px var(--bg);
+  color: var(--bg);
+  text-shadow: 0 2px 2px var(--color-alt);
 }
 
 @media screen and (max-width: 768px) {
     ::-webkit-scrollbar { width:0; height:0 }
     ::-webkit-scrollbar-thumb { background: transparent}
     ::-webkit-scrollbar-track { background-color: transparent} 
+
+    .swipe_nav.nav-tabs > li > a {
+      width: 124px;
+      padding: 8px 14px;
+    }
     
 }
