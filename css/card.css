@@ -44,11 +44,14 @@
 .card > img {
   position: absolute;
   top: 10%;
-  min-height: fit-content;
-  max-height: 200px;
   transition: 0.35s;
   opacity: 0.2;
   z-index: -1;
+
+  /* for ios */
+  max-width: 100%;
+  height: auto;
+  align-self: flex-start;
 }
 
 
