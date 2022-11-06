@@ -455,7 +455,7 @@ footer > h3:hover > a::before {
   }
 
   header {
-    padding: 24px 0 4px;
+    padding: 1rem 2rem;
   }
   nav {
     pointer-events: visible;
