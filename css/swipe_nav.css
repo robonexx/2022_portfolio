@@ -20,12 +20,12 @@
 .swipe_nav.nav-tabs > li > a {
   display: block;
   background: var(--color-black);
-  width: 160px;
+  width: 120px;
   text-align: center;
   color: var(--bg);
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 16px;
+  padding: 8px 14px;
   font-weight: 800;
   text-shadow: 0 2px 2px var(--color-alt);
   transition: all 0.3s ease-in-out;
