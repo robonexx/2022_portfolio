@@ -464,6 +464,10 @@ footer > h3:hover > a::before {
     width: 60%;
   }
 
+  article {
+    margin-top: 0;
+  }
+
   .hero {
     align-items: flex-start;
   }
