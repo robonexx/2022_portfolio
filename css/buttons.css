@@ -2,7 +2,7 @@
   position: fixed;
   top: 2rem;
   left: 2rem;
-  z-index: 100;
+  z-index: 1000;
   font-size: calc(1vmin + 1.25vmax);
   width: fit-content;
   height: fit-content;
