@@ -100,6 +100,76 @@ article {
   cursor: pointer;
 }
 
+.talk {
+  position: absolute;
+  top: 35vh;
+  left: 70%;
+  height: fit-content;
+  width: 100px;
+  color: white;
+  font-size: 0.6rem;
+  white-space: initial;
+  word-break: break-word;
+  z-index: 100;
+  
+}
+
+/* using the after selector to create a text animation */
+.talk::after {
+  content: "";
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: talk 15s ease-out 0.5s 1 forwards;
+  transition: width 0.2s ease-in-out;
+}
+
+@keyframes talk {
+  0% {
+    content: "Hi There";
+    width: 0;
+  }
+  5% {
+    content: "Hi There";
+    width: 100%;
+  }
+  
+
+  15% {
+    content: "So you want to learn how 2 code?";
+    
+  }
+  
+  
+  30% {
+    content: "Im here to help!";
+    width: 100%;
+  }
+  
+  
+  45% {
+    content: "You can scroll down to read Where to start";
+    width: 100%;
+  }
+
+  
+  60% {
+    content: "& see how i started";
+    width: 100%;
+  }
+  
+  75% {
+    content: "then check out the resources page to read more";
+    width: 100%;
+  }
+  
+  100% {
+    content: "REMEMBER, YOU JUST HAVE TO START! every failure is a lesson learned... remember that & keep on going forward!";
+    width: 100%;
+  }
+}
+
 .scroll_down {
   position: sticky;
   left: 50%;
@@ -137,6 +207,8 @@ section#about > h2 {
   height: 80%;
   transition: opacity 0.6s ease-in-out;
 }
+
+/* Maybe Ill also  move these keyframes to the keyframes css file */
 
 @keyframes glitch {
   5% {
@@ -356,7 +428,8 @@ footer > h3:hover > a::before {
   border-bottom-right-radius: 25px;
 }
 
-/* MEDIA QUERIES */
+
+/* ============== MEDIA QUERIES ==================== */
 @media screen and (min-width: 768px) {
   ::-webkit-scrollbar {
     width: 1rem;
@@ -400,6 +473,16 @@ footer > h3:hover > a::before {
 
   #about > .images {
     align-self: center;
+  }
+
+  .talk {
+    top: 40vh;
+    left: 65%;
+    height: fit-content;
+    width: 200px;
+    color: white;
+    font-size: 1.4rem;
+    
   }
 
   .desc > h6 {

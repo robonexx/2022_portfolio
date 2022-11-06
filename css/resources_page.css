@@ -28,4 +28,9 @@
  .card_wrapper {
   --auto-grid-min-size: 30%;
  }
+
+ .card > img {
+  transform: rotate(360deg);
+  transition: 5s ease;
+ }
 }
