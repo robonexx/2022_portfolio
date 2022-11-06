@@ -26,7 +26,7 @@
   color: var(--color-alt);
   text-shadow: 0 2px 2px var(--bg);
   text-decoration: none;
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-weight: 800;
   transition: all 0.3s ease-in-out;
 }
