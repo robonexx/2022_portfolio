@@ -14,8 +14,8 @@
 @import url("css/buttons.css");
 
 /* SVG / logo */
-@import url("css/logo.css");
-@import url("css/coffee.css");
+@import url("css/logo_svg.css");
+@import url("css/coffee_svg.css");
 
 
 header {
@@ -28,6 +28,15 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
 }
 /* 
 .theme_btn {
@@ -285,6 +294,7 @@ section#about > h2 {
   line-height: 125%;
 }
 .where_to_start_content > ul > li > a {
+  /* Just showing How I did this first then I set this in the base css file */
   font-size: clamp(1rem, 2.5vw, 2rem);
   line-height: 125%;
   color: var(--color-alt);
@@ -295,10 +305,7 @@ section#about > h2 {
 .where_to_start_content > ul > li > a > span {
   color: var(--color-alt);
 }
-.where_to_start_content > p {
-  max-width: 100%;
-  font-size: 1rem;
-}
+
 
 .checkmore {
   margin: 2rem 0;

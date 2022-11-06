@@ -56,11 +56,13 @@ a {
 
 input[type="text"],
 input[type="email"] {
+  color: var(--color-black);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
   border: 2px solid var(--color-alt);
+  color: var(--color-alt);
 }
 
 .input-field {
@@ -68,7 +70,6 @@ input[type="email"]:focus {
   max-width: 100%;
   border: none;
   outline: none;
-  background: var(--text);
   padding: 3px;
   font-size: 12px;
   caret-color: var(--color-gray);
@@ -80,7 +81,7 @@ input[type="email"]:focus {
 
 .input-field:valid {
   background: var(--color-form-valid);
-  color: var(--black);
+  color: var(--color-black);
 }
 .input-field:invalid {
   background: var(--text);
@@ -120,8 +121,8 @@ input:required:invalid {
 
 .message {
   margin: auto;
-  max-width: 30em;
-  min-width: 50%;
+  min-width: 80%;
+  max-width: 100%;
   margin-right: 0;
   text-align: left;
   border: 1px solid var(--color-visited);
