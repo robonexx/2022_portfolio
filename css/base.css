@@ -78,15 +78,6 @@ h1 {
   word-spacing: 0.5rem;
 }
 
-.special {
-  font-family: Coffee;
-  margin: 0.5rem 0;
-  font-size: calc(3.5vmin + 2vmax);
-  font-weight: 700;
-  line-height: 1;
-  word-spacing: 0.5rem;
-}
-
 h1,
 h4,
 h6 {

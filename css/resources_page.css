@@ -3,6 +3,19 @@
   margin-top: 24vh;
 }
 
+#special {
+  font-family: Coffee;
+  margin: 0.5rem 0;
+  font-size: calc(3.5vmin + 4vmax);
+  font-weight: 700;
+  line-height: 1;
+  word-spacing: 0.5rem;
+}
+
+#special2 {
+  font-family: Kenoky;
+}
+
 .resources_page_a {
   color: var(--color-alt);
   cursor: pointer;
