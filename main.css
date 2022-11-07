@@ -183,12 +183,12 @@ article {
 }
 
 section {
+  padding-top: 15vh;
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 2rem 0;
 }
 
 section#about > h2 {
