@@ -141,18 +141,24 @@
 }
 
 
-.navbar a:hover,
-.navbar a:active {
+.navbar a:hover {
   color: var(--text);
   cursor: pointer;
 }
+
+
 
 .navbar a:visited {
   -webkit-text-stroke: 1px var(--color-visited);
 }
 .navbar a:visited:hover {
   -webkit-text-stroke: 1px var(--color-visited);
-  color: var(--color-gray);
+  /* color: var(--color-gray); */
+}
+
+.navbar a:active {
+  color: var(--color-active);
+  -webkit-text-stroke: 1px var(--color-active);
 }
 
 /* Media queries */
@@ -210,11 +216,5 @@
     transition: color 0.3s ease-in-out;
     cursor: pointer;
   }
-
-  .navbar a:hover,
-  .navbar a:active {
-    color: var(--text);
-  }
-
   
 }
