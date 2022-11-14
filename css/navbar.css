@@ -207,14 +207,5 @@
   .navbar .menu_items li:first-of-type {
     margin-top: unset;
   }
-
-  .navbar a {
-    -webkit-text-stroke: 1px var(--text);
-    text-decoration: none;
-    color: transparent;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-    cursor: pointer;
-  }
   
 }
