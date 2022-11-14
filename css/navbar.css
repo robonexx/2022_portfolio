@@ -148,10 +148,10 @@
 }
 
 .navbar a:visited {
-  -webkit-text-stroke: 1px var(--color-gray);
+  -webkit-text-stroke: 1px var(--color-visited);
 }
 .navbar a:visited:hover {
-  -webkit-text-stroke: 1px var(--color-gray);
+  -webkit-text-stroke: 1px var(--color-visited);
   color: var(--color-gray);
 }
 
