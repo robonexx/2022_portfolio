@@ -7,7 +7,7 @@
   --color-alt: #ff7750;
   --color-visited: #888;
   --color-active: #ff7750;
-  --color-gray: #999;
+  --color-gray: rgba(153, 153, 153, 0.699);
   --color-dimmed: rgba(0, 0, 0, 0.25);
   --color-scrollbar-bg: #121212;
   --color-form-valid: #def0dec4;

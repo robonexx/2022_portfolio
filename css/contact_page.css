@@ -19,12 +19,11 @@
   max-width: 100%;
   height: fit-content;
   background: var(--text);
-  box-shadow: 0px 0px 1px black, 0px 0px 1px white;
   display: flex;
   flex-flow: column;
   margin: 2rem auto;
   width: 100%;
-  min-width: 360px;
+  min-width: 80%;
   height: fit-content;
   padding: 25px 15px;
   box-shadow: 0px 0px 1px black, 0px 0px 1px rgb(12, 12, 12);
@@ -51,7 +50,7 @@ a {
   justify-content: space-between;
   max-height: 100%;
   background-color: var(--text);
-  border-bottom: 1px solid #292727;
+  
 }
 
 input[type="text"],
@@ -64,15 +63,30 @@ input[type="email"]:focus {
   border: 2px solid var(--color-alt);
   color: var(--color-alt);
 }
+input[for="textarea"]:focus {
+  border: 2px solid var(--color-alt);
+  color: var(--color-alt);
+}
 
 .input-field {
-  min-width: 80%;
-  max-width: 100%;
+  width: 70%;
+  padding: 3px;
+  margin: auto;
+  margin-right: 0;
   border: none;
   outline: none;
-  padding: 3px;
   font-size: 12px;
   caret-color: var(--color-gray);
+}
+
+#message {
+  width: 70%;
+  padding: 3px;
+  margin-right: 0;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  border: 2px solid var(--color-alt);
 }
 .input-field::placeholder {
   color: var(--color-visited);
@@ -119,15 +133,7 @@ input:required:invalid {
   transform: scale(0.96);
 }
 
-.message {
-  margin: auto;
-  min-width: 80%;
-  max-width: 100%;
-  margin-right: 0;
-  text-align: left;
-  border: 1px solid var(--color-visited);
-}
-
+/* 
 .alert {
   text-align: center;
   padding: 10px;
@@ -135,7 +141,7 @@ input:required:invalid {
   color: #fafafa;
   margin-bottom: 10px;
   display: none;
-}
+} */
 /* 
 #dummyframe {
   display: block;
@@ -156,7 +162,8 @@ input:required:invalid {
   }
   .form_container {
     margin: 2rem auto 0;
-    max-width: 40%;
+    min-width: 40%;
+    max-width: 60%;
     height: fit-content;
     background: var(--text);
     box-shadow: 0px 0px 1px black, 0px 0px 1px white;
@@ -165,12 +172,15 @@ input:required:invalid {
   .input-field {
     min-width: unset;
     max-width: unset;
-    width: 60%;
+    width: 100%;
     border: none;
     outline: none;
     background: var(--text);
     padding: 3px;
     font-size: 12px;
     caret-color: var(--color-gray);
+  }
+  #message {
+    width: 100%;
   }
 }
