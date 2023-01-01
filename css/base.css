@@ -3,6 +3,7 @@
   --bg: #f8f8f8;
   --text: #232328;
   --color-white: #f8f8f8;
+  --color-white-alt: #cecece;
   --color-black: #121212;
   --color-alt: #ff7750;
   --color-visited: #888;
@@ -132,8 +133,8 @@ h6 {
 }
 
 .page_lists > li {
-  font-size: clamp(1rem, 2.5vw, 2rem);
-  color: var(--color-alt);
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--color-white-alt);
   padding: 0.5rem 0;
   list-style-type: circle;
 }
@@ -149,6 +150,18 @@ p {
 
 input {
   color: black;
+}
+
+.special_links {
+  text-decoration: none;
+  color: aqua;
+  background: black;
+  padding: 0.25rem 0.5rem;
+}
+
+.special_links:hover {
+  background-color: #181818;
+  color: #ededed;
 }
 
 /* Chrome, Safari, and also the Edge Browser and Firefox */

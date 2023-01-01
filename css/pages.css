@@ -16,22 +16,70 @@
 }
 
 .example {
+  position: relative;
   width: 100%;
   height: fit-content;
   padding: 2rem;
+  margin: 1rem 0;
 }
 
-.example > div {
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding: 2rem 4rem;
   background-color: black;
   color: white;
 }
-
-.example > div:last-of-type {
-  padding: 2rem 4rem;
-  background-color: white;
-  color: orangered;
+.example > code {
+  position: relative;
 }
+
+
+.demo_body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20vh 4rem 5vh;
+}
+
+.demo_body :not(.back_btn) a {
+  text-decoration: none;
+  color: var(--color-alt);
+}
+
+.demo_body a:hover {
+  text-decoration: none;
+  color: var(--color-form-valid);
+}
+
+.demo_body code {
+  font-size: clamp(0.8rem, 1vw, 1.5rem);
+  background-color: transparent;
+}
+
+.demo_body pre {
+  margin: 2rem 0;
+  border-top: 3px solid #888;
+  border-bottom: 3px solid #888;
+}
+
+.show_images {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.image_hover:hover > h3 {
+  color: gray;
+}
+
+.image_hover:hover > .show_images {
+  display: block;
+}
+
 
 @media screen and (min-width: 768px) {
   .main_pages {

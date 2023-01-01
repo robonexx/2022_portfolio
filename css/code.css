@@ -1,3 +1,19 @@
-.onScroll {
-    
+code {
+    font-size: 1.2rem;
+    background-color: black;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+.code_box {
+    padding: 2rem 0.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid #888;
+
+}
+
+.demo_body > code {
+    margin: 0 auto;
+    width: 80%;
 }
